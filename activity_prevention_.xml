@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/MainLayout"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+
+    <ScrollView
+
+        android:id="@+id/MainScrollView"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+
+
+
+
+        <RelativeLayout
+
+            android:id="@+id/ListLayout"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+
+
+            <EditText
+
+                android:id="@+id/a2"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/q1"
+
+                android:layout_below="@+id/q2"
+
+                android:elevation="10dp"
+
+                android:ems="10"
+
+                android:hapticFeedbackEnabled="false"
+
+                android:inputType="textPersonName"
+
+                android:textColorLink="@android:color/holo_blue_light"
+
+                android:textIsSelectable="true" />
+
+
+
+            <TextView
+
+                android:id="@+id/q1"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+
+                android:layout_marginStart="45dp"
+
+                android:layout_marginTop="50dp"
+
+                android:background="@color/colorAccent"
+
+                android:padding="7dp"
+
+                android:text="@string/q1"
+
+                android:textColor="@android:color/background_light" />
+
+
+
+            <TextView
+
+                android:id="@+id/q2"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/a2"
+
+                android:layout_below="@+id/q1"
+
+                android:layout_marginTop="50dp"
+
+                android:background="@color/colorAccent"
+
+                android:padding="7dp"
+
+                android:text="@string/q2"
+
+                android:textColor="@android:color/background_light" />
+
+
+
+            <TextView
+
+                android:id="@+id/q3"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/q1"
+
+                android:layout_below="@+id/a2"
+
+                android:layout_marginTop="25dp"
+
+                android:background="@color/colorAccent"
+
+                android:padding="7dp"
+
+                android:text="@string/q3"
+
+                android:textColor="@android:color/background_light" />
+
+
+
+            <EditText
+
+                android:id="@+id/a3"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/q3"
+
+                android:layout_below="@+id/q3"
+
+                android:ems="10"
+
+                android:inputType="textPersonName"
+
+                android:textColorLink="@android:color/holo_blue_light"
+
+                android:textIsSelectable="true" />
+
+
+
+            <TextView
+
+                android:id="@+id/q4"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/q2"
+
+                android:layout_below="@+id/a3"
+
+                android:layout_marginTop="25dp"
+
+                android:background="@color/colorAccent"
+
+                android:padding="7dp"
+
+                android:text="@string/q4"
+
+                android:textColor="@android:color/background_light" />
+
+
+
+            <EditText
+
+                android:id="@+id/a4"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/a3"
+
+                android:layout_below="@+id/q4"
+
+                android:ems="10"
+
+                android:inputType="textPersonName"
+
+                android:textColorLink="@android:color/holo_blue_light"
+
+                android:textIsSelectable="true" />
+
+
+
+            <TextView
+
+                android:id="@+id/q5"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/a4"
+
+                android:layout_below="@+id/a4"
+
+                android:layout_marginTop="25dp"
+
+                android:background="@color/colorAccent"
+
+                android:padding="7dp"
+
+                android:text="@string/q5"
+
+                android:textColor="@android:color/background_light" />
+
+
+
+            <EditText
+
+                android:id="@+id/a5"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignEnd="@+id/a4"
+
+                android:layout_below="@+id/q5"
+
+                android:ems="10"
+
+                android:inputType="textPersonName"
+
+                android:textColorLink="@android:color/holo_blue_light"
+
+                android:textIsSelectable="true" />
+
+
+
+            <TextView
+
+                android:id="@+id/q6"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/a6"
+
+                android:layout_below="@+id/a5"
+
+                android:layout_marginTop="25dp"
+
+                android:background="@color/colorAccent"
+
+                android:padding="7dp"
+
+                android:text="@string/q6"
+
+                android:textColor="@android:color/background_light" />
+
+
+
+            <EditText
+
+                android:id="@+id/a6"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/q4"
+
+                android:layout_below="@+id/q6"
+
+                android:ems="10"
+
+                android:inputType="textPersonName"
+
+                android:textColorLink="@android:color/holo_blue_light"
+
+                android:textIsSelectable="true" />
+
+
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/q1"
+    android:layout_alignStart="@id/q1">
+             <RadioButton
+
+                android:id="@+id/A1_Yes"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+
+                android:hapticFeedbackEnabled="true"
+
+                android:text="@string/yesButton" />
+            <RadioButton
+
+                android:id="@+id/A1_No"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+
+                android:hapticFeedbackEnabled="true"
+
+                android:text="@string/noButton" />
+
+
+
+
+</RadioGroup>
+
+
+
+            <TextView
+
+                android:id="@+id/q7"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/a7"
+
+                android:layout_below="@+id/a6"
+
+                android:layout_marginTop="25dp"
+
+                android:background="@color/colorAccent"
+
+                android:padding="7dp"
+
+                android:text="@string/q7"
+
+                android:textColor="@android:color/background_light" />
+
+
+
+            <EditText
+
+                android:id="@+id/a7"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/q4"
+
+                android:layout_below="@+id/q7"
+
+                android:ems="10"
+
+                android:inputType="textPersonName"
+
+                android:textColorLink="@android:color/holo_blue_light"
+
+                android:textIsSelectable="true" />
+
+
+
+            <TextView
+
+                android:id="@+id/q8"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/a7"
+
+                android:layout_below="@+id/a7"
+
+                android:layout_marginTop="25dp"
+
+                android:background="@color/colorAccent"
+
+                android:padding="7dp"
+
+                android:text="@string/q8"
+
+                android:textColor="@android:color/background_light" />
+
+
+
+            <EditText
+
+                android:id="@+id/a8"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/q4"
+
+                android:layout_below="@+id/q8"
+
+                android:ems="10"
+
+                android:inputType="textPersonName"
+
+                android:textColorLink="@android:color/holo_blue_light"
+
+                android:textIsSelectable="true" />
+
+
+
+            <TextView
+
+                android:id="@+id/q9"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/a7"
+
+                android:layout_below="@+id/a8"
+
+                android:layout_marginTop="25dp"
+
+                android:background="@color/colorAccent"
+
+                android:padding="7dp"
+
+                android:text="@string/q9"
+
+                android:textColor="@android:color/background_light" />
+
+
+
+            <TextView
+
+                android:id="@+id/q10"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/a7"
+
+                android:layout_below="@+id/Radgrp2"
+
+                android:layout_marginTop="25dp"
+
+                android:background="@color/colorAccent"
+
+                android:padding="7dp"
+
+                android:text="@string/q10"
+
+                android:textColor="@android:color/background_light" />
+
+
+
+            <EditText
+
+                android:id="@+id/a10"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/q4"
+
+                android:layout_below="@+id/q10"
+
+                android:ems="10"
+
+                android:inputType="textPersonName"
+
+                android:textColorLink="@android:color/holo_blue_light"
+
+                android:textIsSelectable="true" />
+
+
+
+            <TextView
+
+                android:id="@+id/q11"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/a7"
+
+                android:layout_below="@+id/a10"
+
+                android:layout_marginTop="25dp"
+
+                android:background="@color/colorAccent"
+
+                android:padding="7dp"
+
+                android:text="@string/q11"
+
+                android:textColor="@android:color/background_light" />
+
+
+
+            <TextView
+
+                android:id="@+id/q12"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/a7"
+
+                android:layout_below="@+id/Radgrp3"
+
+                android:layout_marginTop="25dp"
+
+                android:background="@color/colorAccent"
+
+                android:padding="7dp"
+
+                android:text="@string/q12"
+
+                android:textColor="@android:color/background_light" />
+
+
+
+            <EditText
+
+                android:id="@+id/a12"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/q4"
+
+                android:layout_below="@+id/q12"
+
+                android:ems="10"
+
+                android:inputType="textPersonName"
+
+                android:textColorLink="@android:color/holo_blue_light"
+
+                android:textIsSelectable="true" />
+
+
+
+            <Button
+
+                android:id="@+id/ProceedButton"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/a12"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginBottom="25dp"
+
+                android:layout_marginLeft="50dp"
+
+                android:layout_marginRight="50dp"
+
+                android:layout_marginTop="50dp"
+
+                android:background="@color/colorAccent"
+
+                android:padding="10dp"
+
+                android:paddingEnd="50dp"
+
+                android:paddingStart="50dp"
+
+                android:text="@string/PButton"
+
+                android:textColor="@android:color/background_light"
+
+                android:onClick="Proceed"/>
+
+
+            <RadioGroup
+                android:id="@+id/Radgrp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/q9"
+                android:layout_alignStart="@id/q1">
+            <RadioButton
+
+                android:id="@+id/yesButton2"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/q9"
+
+                android:layout_below="@+id/q9"
+
+                android:text="@string/yb2" />
+
+
+
+            <RadioButton
+
+                android:id="@+id/noButton2"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@+id/yesButton3"
+
+                android:layout_below="@+id/q9"
+
+                android:text="@string/nb2" />
+            </RadioGroup>
+            <RadioGroup
+                android:id="@+id/Radgrp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/q11"
+                android:layout_alignStart="@id/q1">
+
+            <RadioButton
+
+                android:id="@+id/yesButton3"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="@string/yb3" />
+
+
+
+            <RadioButton
+
+                android:id="@+id/noButton3"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="@string/nb3" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
+
