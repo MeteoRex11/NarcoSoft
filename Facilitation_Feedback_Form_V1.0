@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/MainScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/ListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/f_q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="How many drug abuse victims have been identified during the month?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/f_a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_q1"
+                android:layout_below="@+id/f_q1"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hapticFeedbackEnabled="false"
+                android:inputType="number"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/f_q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_a1"
+                android:layout_below="@+id/f_a1"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="How did they receive the interaction?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/f_a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_q2"
+                android:layout_below="@+id/f_q2"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hapticFeedbackEnabled="false"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/f_q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_a2"
+                android:layout_below="@+id/f_a2"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="Was the contact with the victim made directly or through the family?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/f_a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_q3"
+                android:layout_below="@+id/f_q3"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/f_q4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_q2"
+                android:layout_below="@+id/f_a3"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="What was the attitude of the victim?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/f_a4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_a3"
+                android:layout_below="@+id/f_q4"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/f_q5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_a4"
+                android:layout_below="@+id/f_a4"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="Were you able to get them to contact the OOAT centre or any other De-Addiction Centre?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/f_a5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/f_a4"
+                android:layout_below="@+id/f_q5"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/f_q6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_a5"
+                android:layout_below="@+id/f_a5"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="Which centre was contacted?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/f_a6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_q4"
+                android:layout_below="@+id/f_q6"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/f_q7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_a6"
+                android:layout_below="@+id/f_a6"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="How did you convince them regarding the social stigma?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/f_a7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_q4"
+                android:layout_below="@+id/f_q7"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/f_q8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_a7"
+                android:layout_below="@+id/f_a7"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="How many of the victims accepted to get treated?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/f_a8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_q8"
+                android:layout_below="@+id/f_q8"
+                android:ems="10"
+                android:inputType="number"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/f_q9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_a7"
+                android:layout_below="@+id/f_a8"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="What were the main arguments given by those victims / their families ?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/f_a9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_q9"
+                android:layout_below="@+id/f_q9"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/f_q10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_a9"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/f_a9"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="How many victims have to be visited again to be convinced?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/f_a10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_q4"
+                android:layout_below="@+id/f_q10"
+                android:ems="10"
+                android:inputType="number"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/f_q11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_a10"
+                android:layout_below="@+id/f_a10"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="What problems were faced by you regarding the victims?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/f_a11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_q11"
+                android:layout_below="@+id/f_q11"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/f_q12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_a11"
+                android:layout_below="@+id/f_a11"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="What problems were faced by you regarding the families of the victims?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/f_a12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_q12"
+                android:layout_below="@+id/f_q12"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/f_q13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_a12"
+                android:layout_below="@+id/f_a12"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="What problems were faced by you regarding the OOAT centres?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/f_a13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_q13"
+                android:layout_below="@+id/f_q13"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/f_q14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_a13"
+                android:layout_below="@+id/f_a13"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="Any other problems you faced?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/f_a14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_q14"
+                android:layout_below="@+id/f_q14"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <Button
+                android:id="@+id/ProceedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_a14"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/colorAccent"
+                android:padding="10dp"
+                android:paddingEnd="50dp"
+                android:paddingStart="50dp"
+                android:text="@string/PButton"
+                android:textColor="@android:color/background_light"
+                android:onClick="Proceed"/>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
