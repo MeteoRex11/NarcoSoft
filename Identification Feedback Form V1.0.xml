@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/MainScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/ListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/i_q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="How many people are known to use narcotics in the Mohalla?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/i_a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_q1"
+                android:layout_below="@+id/i_q1"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hapticFeedbackEnabled="false"
+                android:inputType="number"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/i_q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_a1"
+                android:layout_below="@+id/i_a1"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="What types of narcotics are being consumed in the area?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/i_a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_q2"
+                android:layout_below="@+id/i_q2"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hapticFeedbackEnabled="false"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/i_q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_a2"
+                android:layout_below="@+id/i_a2"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="What is the approximate quantity of the narcotics being used by the people?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_q3"
+                android:layout_below="@+id/i_q3"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/i_q4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_q2"
+                android:layout_below="@+id/a3"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="What is the approximate price of these narcotics?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/i_a4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/a3"
+                android:layout_below="@+id/i_q4"
+                android:ems="10"
+                android:inputType="number"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/i_q5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_a4"
+                android:layout_below="@+id/i_a4"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="What are the possible reasons for people turning towards narcotics?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/i_a5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/i_a4"
+                android:layout_below="@+id/i_q5"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/i_q6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_a5"
+                android:layout_below="@+id/i_a5"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="Is there any area in the village, that is more prone to drug abuse?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/i_a6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_q4"
+                android:layout_below="@+id/i_q6"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/i_q7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_a6"
+                android:layout_below="@+id/i_a6"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="What are the main places where narcotics users gather?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/i_a7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_q4"
+                android:layout_below="@+id/i_q7"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/i_q8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_a7"
+                android:layout_below="@+id/i_a7"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="When are the narcotics supplied?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/i_a8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_q8"
+                android:layout_below="@+id/i_q8"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/i_q9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_a7"
+                android:layout_below="@+id/i_a8"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="Around what time are these narcotics used by people?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/i_a9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_q9"
+                android:layout_below="@+id/i_q9"
+                android:ems="10"
+                android:inputType="time"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/i_q10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_a9"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/i_a9"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="At what location are these narcotics purchased?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/i_a10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_q4"
+                android:layout_below="@+id/i_q10"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/i_q11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_a10"
+                android:layout_below="@+id/i_a10"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="Who are the local persons involved in drug trafficking?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/i_a11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_q11"
+                android:layout_below="@+id/i_q11"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/i_q12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_a11"
+                android:layout_below="@+id/i_a11"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="Who are the people supporting these traffickers?"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/i_a12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/i_q12"
+                android:layout_below="@+id/i_q12"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <Button
+                android:id="@+id/ProceedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/i_a12"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/colorAccent"
+                android:padding="10dp"
+                android:paddingEnd="50dp"
+                android:paddingStart="50dp"
+                android:text="@string/PButton"
+                android:textColor="@android:color/background_light"
+                android:onClick="Proceed"/>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
