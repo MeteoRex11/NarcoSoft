@@ -299,7 +299,7 @@
                 android:textIsSelectable="true" />
 
             <Button
-                android:id="@+id/ProceedButton"
+                android:id="@+id/IdentificationProceedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/i_a12"
