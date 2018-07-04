@@ -81,7 +81,7 @@
                 android:textColor="@android:color/background_light" />
 
             <EditText
-                android:id="@+id/a3"
+                android:id="@+id/i_a3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/i_q3"
@@ -96,7 +96,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/i_q2"
-                android:layout_below="@+id/a3"
+                android:layout_below="@+id/i_a3"
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
@@ -107,7 +107,7 @@
                 android:id="@+id/i_a4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/a3"
+                android:layout_alignStart="@+id/i_q4"
                 android:layout_below="@+id/i_q4"
                 android:ems="10"
                 android:inputType="number"
