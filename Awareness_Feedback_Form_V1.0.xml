@@ -26,7 +26,7 @@
                 android:layout_marginTop="50dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="Have you performed any activity to make people aware about narcotics and it's ill effects, succesfully?"
+                android:text="Have you performed any activity to make people aware about narcotics and their ill effects, succesfully?"
                 android:textColor="@android:color/background_light" />
 
 
