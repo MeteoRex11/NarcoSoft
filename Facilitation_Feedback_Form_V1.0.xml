@@ -36,7 +36,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/f_q1"
                 android:layout_below="@+id/f_q1"
-                android:elevation="10dp"
                 android:ems="10"
                 android:hapticFeedbackEnabled="false"
                 android:inputType="number"
@@ -61,7 +60,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/f_q2"
                 android:layout_below="@+id/f_q2"
-                android:elevation="10dp"
                 android:ems="10"
                 android:hapticFeedbackEnabled="false"
                 android:inputType="textPersonName"
@@ -345,7 +343,7 @@
                 android:textIsSelectable="true" />
 
             <Button
-                android:id="@+id/FacilitationProceedButton"
+                android:id="@+id/ProceedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/f_a14"
