@@ -96,12 +96,16 @@
                 android:layout_below="@+id/GroupDiscussionButton"
                 android:text="Community Awareness Programs" />
 
-
+                <RadioButton
+                    android:id="@+id/OtherButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/a_q2"
+                    android:layout_below="@+id/CommunityButton"
+                    android:text="Any other activity" />   
 
             </RadioGroup>
-
-
-
+            
 
             <TextView
                 android:id="@+id/a_q3"
@@ -125,48 +129,26 @@
                 android:inputType="textPersonName"
                 android:textColorLink="@android:color/holo_blue_light"
                 android:textIsSelectable="true" />
+            
 
             <TextView
                 android:id="@+id/a_q4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/a_q2"
+                android:layout_alignStart="@+id/a_a3"
                 android:layout_below="@+id/a_a3"
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="How many people were interested in the content of the activity?"
+                android:text="Was there any feedback given by the people?"
                 android:textColor="@android:color/background_light" />
 
             <EditText
                 android:id="@+id/a_a4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/a_a3"
+                android:layout_alignEnd="@+id/a_a3"
                 android:layout_below="@+id/a_q4"
-                android:ems="10"
-                android:inputType="number"
-                android:textColorLink="@android:color/holo_blue_light"
-                android:textIsSelectable="true" />
-
-            <TextView
-                android:id="@+id/a_q5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/a_a4"
-                android:layout_below="@+id/a_a4"
-                android:layout_marginTop="25dp"
-                android:background="@color/colorAccent"
-                android:padding="7dp"
-                android:text="Was there any change observed in the people after the acitivity was performed?"
-                android:textColor="@android:color/background_light" />
-
-            <EditText
-                android:id="@+id/a_a5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/a_a4"
-                android:layout_below="@+id/a_q5"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:textColorLink="@android:color/holo_blue_light"
@@ -177,7 +159,7 @@
                 android:id="@+id/AwarenessProceedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/a_a5"
+                android:layout_below="@+id/a_a4"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="25dp"
                 android:layout_marginLeft="50dp"
