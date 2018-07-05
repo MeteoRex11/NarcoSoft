@@ -29,6 +29,7 @@
                 android:text="Have you performed any activity to make people aware about narcotics and it's ill effects, succesfully?"
                 android:textColor="@android:color/background_light" />
 
+
             <RadioButton
                 android:id="@+id/a_yesButton"
                 android:layout_width="wrap_content"
@@ -58,14 +59,17 @@
                 android:text="If yes, what is the activity?"
                 android:textColor="@android:color/background_light" />
 
-           
+            <RadioGroup
+                android:id="@+id/RGrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/a_q2"
+                android:layout_below="@+id/a_q2">
 
             <RadioButton
                 android:id="@+id/ShortFilmButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/a_q2"
-                android:layout_below="@+id/a_q2"
                 android:text="Short Film" />
 
             <RadioButton
@@ -93,12 +97,18 @@
                 android:text="Community Awareness Programs" />
 
 
+
+            </RadioGroup>
+
+
+
+
             <TextView
                 android:id="@+id/a_q3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/a_q2"
-                android:layout_below="@+id/CommunityButton"
+                android:layout_below="@+id/RGrp"
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
@@ -181,7 +191,7 @@
                 android:text="@string/PButton"
                 android:textColor="@android:color/background_light" />
 
-            
+
 
 
         </RelativeLayout>
