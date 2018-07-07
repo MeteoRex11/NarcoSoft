@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity"
+    android:background="#ffffff"
+    android:gravity="center_vertical|center_horizontal|center"
+
+    >
+
+    <Button
+        android:id="@+id/imageview4"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:background="@drawable/prevent_backgrnd"
+        android:drawableTop="@drawable/positive_activity"
+        android:scaleType="centerInside"
+        android:text="Positive Activity "
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#4d545b"
+        android:layout_toRightOf="@id/imageview2"
+        android:layout_below="@id/imageview3"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginTop="60sp"
+        android:onClick="PositiveActivity"
+        android:textSize="20sp"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <Button
+        android:id="@+id/imageview2"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:background="@drawable/awareness_bckrnd"
+        android:textStyle="bold"
+        android:textColor="#4d545b"
+        android:scaleType="centerInside"
+        android:drawableTop="@drawable/awareness"
+        android:layout_below="@id/imageview"
+        android:text="Awareness"
+        android:layout_marginTop="60sp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:onClick="AwarenessActivity"
+        />
+
+    <Button
+        android:id="@+id/imageview3"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#4d545b"
+        android:layout_toRightOf="@id/imageview"
+        android:layout_marginLeft="20sp"
+        android:background="@drawable/button_background"
+        android:textSize="20sp"
+        android:scaleType="centerInside"
+        android:text="Protection"
+        android:drawableTop="@drawable/protection"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:onClick="ProtectionActivity"
+        />
+
+    <Button
+        android:id="@+id/imageview"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#4d545b"
+        android:background="@drawable/facilitate_bckrnd"
+        android:textSize="20sp"
+        android:scaleType="centerInside"
+        android:text="De-Addiction"
+        android:drawableTop="@drawable/de_addict"
+        android:paddingStart="4sp"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:onClick="DeaddictionActivity"
+        />
+
+    <Button
+        android:id="@+id/imageview5"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="60sp"
+        android:background="@drawable/status_bckgrnd"
+        android:drawableTop="@drawable/mohaals_status"
+        android:scaleType="centerInside"
+        android:layout_below="@id/imageview4"
+        android:text="Mohalla Status"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#4d545b"
+        android:textSize="20sp"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <Button
+        android:id="@+id/imageview6"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="60sp"
+        android:textStyle="bold"
+        android:textColor="#4d545b"
+        android:background="@drawable/switch_bckgrnd"
+        android:drawableTop="@drawable/switch_acct2"
+        android:scaleType="centerInside"
+        android:layout_below="@id/imageview4"
+        android:layout_toRightOf="@id/imageview5"
+        android:layout_marginStart="20sp"
+        android:text="Switch Account"
+        android:textAlignment="center"
+        android:drawingCacheQuality="high"
+        android:textSize="20sp"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:onClick="ChangeAccts"/>
+
+
+
+
+</RelativeLayout>
