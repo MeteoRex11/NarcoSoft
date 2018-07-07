@@ -22,8 +22,8 @@
     <string name="yb3">Yes</string>
     <string name="finishButton">Finish</string>
     <string name="MoreEntriesBttn">Add More Entries</string>
-    <string name="d_q1">How many drug abuse victims have been identified during the month?</string>
-    <string name="d_q2">How did they receive the interaction?</string>
+    <string name="d_q1">How many drug abuse victims have you approached over the month?</string>
+    <string name="d_q2">How did you approach them?</string>
     <string name="d_q9">What were the main arguments given by those victims / their families ?</string>
     <string name="d_q3">Was the contact with the victim made directly or through the family?</string>
     <string name="d_q4">What was the attitude of the victim?</string>
