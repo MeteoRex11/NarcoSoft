@@ -16,17 +16,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/pa_a2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/pa_q1"
-                android:layout_below="@+id/pa_q2"
-                android:ems="10"
-                android:hapticFeedbackEnabled="false"
-                android:inputType="textPersonName"
-                android:textColorLink="@android:color/holo_blue_light"
-                android:textIsSelectable="true" />
 
             <TextView
                 android:id="@+id/pa_q1"
@@ -44,7 +33,7 @@
                 android:id="@+id/pa_q2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/pa_a2"
+                android:layout_alignStart="@+id/pa_q1"
                 android:layout_below="@+id/pa_q1"
                 android:layout_marginTop="50dp"
                 android:background="@color/colorAccent"
@@ -52,12 +41,46 @@
                 android:text="@string/pa_q2"
                 android:textColor="@android:color/background_light" />
 
+            <RadioGroup
+                android:id="@+id/pa_RGrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/pa_q2"
+                android:layout_below="@+id/pa_q2">
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pa_rb_1" />
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pa_rb_2" />
+
+                <RadioButton
+                    android:id="@+id/rb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pa_rb_3" />
+
+                <RadioButton
+                    android:id="@+id/rb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pa_rb_4" />
+
+
+            </RadioGroup>
+
             <TextView
                 android:id="@+id/pa_q3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/pa_q1"
-                android:layout_below="@+id/pa_a2"
+                android:layout_alignStart="@+id/pa_q2"
+                android:layout_below="@+id/pa_RGrp"
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
@@ -117,7 +140,7 @@
                 android:layout_alignEnd="@+id/pa_a4"
                 android:layout_below="@+id/pa_q5"
                 android:ems="10"
-                android:inputType="text|number"
+                android:inputType="text|textPersonName"
                 android:textColorLink="@android:color/holo_blue_light"
                 android:textIsSelectable="true" />
 
@@ -161,7 +184,8 @@
                 android:layout_alignStart="@+id/pa_q1"
                 android:layout_below="@+id/pa_q1"
                 android:hapticFeedbackEnabled="true"
-                android:text="@string/yesButton" />
+                android:text="@string/yb2"
+                />
 
             <TextView
                 android:id="@+id/pa_q7"
@@ -380,13 +404,36 @@
                 android:textColorLink="@android:color/holo_blue_light"
                 android:textIsSelectable="true" />
 
+            <TextView
+                android:id="@+id/pa_q16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/pa_a15"
+                android:layout_below="@+id/pa_a15"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="@string/a_q6"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/pa_a16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/pa_q16"
+                android:layout_below="@+id/pa_q16"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
 
 
             <Button
                 android:id="@+id/ProceedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/pa_a15"
+                android:layout_below="@+id/pa_a16"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="25dp"
                 android:layout_marginLeft="50dp"
