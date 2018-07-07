@@ -311,11 +311,57 @@
                 android:textColorLink="@android:color/holo_blue_light"
                 android:textIsSelectable="true" />
 
+            <TextView
+                android:id="@+id/f_q13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/a12"
+                android:layout_below="@+id/a12"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="@string/pa_q13"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/a13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_q13"
+                android:layout_below="@+id/f_q13"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/f_q14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/a13"
+                android:layout_below="@+id/a13"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="@string/pa_q14"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/a14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_q14"
+                android:layout_below="@+id/f_q14"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
             <Button
                 android:id="@+id/ProceedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/a12"
+                android:layout_below="@+id/a14"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="25dp"
                 android:layout_marginLeft="50dp"
@@ -329,9 +375,9 @@
                 android:textColor="@android:color/background_light"
                 android:onClick="Proceed"/>
 
-           
 
-           
+
+
         </RelativeLayout>
     </ScrollView>
 
