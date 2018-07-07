@@ -11,10 +11,12 @@
     <string name="pa_q6">How many people were invited to be involved in this activity?</string>
     <string name="pa_q7">How many people actually participated in this activity?</string>
     <string name="pa_q8">Who were the people participating in the activity?</string>
-    <string name="pa_q9">Was there any official involved in the facilition of this activity?</string>
+    <string name="pa_q9">Was there any official involved in the facilitation of this activity?</string>
     <string name="pa_q10">If yes, who was this official?</string>
-    <string name="pa_q11">Were there any problems which hindered the facilition of this activity?</string>
+    <string name="pa_q11">Were there any problems which hindered the facilitation of this activity?</string>
     <string name="pa_q12">If yes, what were these problems?</string>
+    <string name="pa_q13">Was there any existing infrastructure available to carry out the activity?</string>
+    <string name="pa_q14">What efforts did you make to create an additional infrastructure for the same?</string>
     <string name="PButton">Proceed</string>
     <string name="yb2">Yes</string>
     <string name="nb2">No</string>
