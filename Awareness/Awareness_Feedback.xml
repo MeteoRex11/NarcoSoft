@@ -1,1 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/MainScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/ListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/a_q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="@string/a_q1"
+                android:textColor="@android:color/background_light" />
+
+
+            <RadioButton
+                android:id="@+id/a_yesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/a_q1"
+                android:layout_below="@+id/a_q1"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/a_noButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/AwarenessProceedButton"
+                android:layout_below="@+id/a_q1"
+                android:text="Only Attempted" />
+
+
+            <TextView
+                android:id="@+id/a_q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/a_q1"
+                android:layout_below="@+id/a_q1"
+                android:layout_marginTop="50dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="@string/a_q2"
+                android:textColor="@android:color/background_light" />
+
+            <RadioGroup
+                android:id="@+id/RGrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/a_q2"
+                android:layout_below="@+id/a_q2">
+
+            <RadioButton
+                android:id="@+id/ShortFilmButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Short Film" />
+
+            <RadioButton
+                android:id="@+id/StreetPlayButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/a_q2"
+                android:layout_below="@+id/ShortFilmButton"
+                android:text="Street Play" />
+
+            <RadioButton
+                android:id="@+id/GroupDiscussionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/a_q2"
+                android:layout_below="@+id/StreetPlayButton"
+                android:text="Group Discussion" />
+
+            <RadioButton
+                android:id="@+id/CommunityButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/a_q2"
+                android:layout_below="@+id/GroupDiscussionButton"
+                android:text="Community Awareness Programs" />
+
+                <RadioButton
+                    android:id="@+id/OtherButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/a_q2"
+                    android:layout_below="@+id/CommunityButton"
+                    android:text="Any other activity" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/a_q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/a_q2"
+                android:layout_below="@+id/RGrp"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="@string/a_q3"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/a_a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/a_q3"
+                android:layout_below="@+id/a_q3"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+
+            <TextView
+                android:id="@+id/a_q4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/a_a3"
+                android:layout_below="@+id/a_a3"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="@string/a_q4"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/a_a4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/a_a3"
+                android:layout_below="@+id/a_q4"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+
+            <Button
+                android:id="@+id/AwarenessProceedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/a_a4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/colorAccent"
+                android:onClick="Proceed"
+                android:padding="10dp"
+                android:paddingEnd="50dp"
+                android:paddingStart="50dp"
+                android:text="@string/PButton"
+                android:textColor="@android:color/background_light" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
 
