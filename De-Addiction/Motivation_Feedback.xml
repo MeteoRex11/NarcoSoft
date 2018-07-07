@@ -37,7 +37,7 @@
                 android:layout_below="@+id/d_m_q1"
                 android:ems="10"
                 android:hapticFeedbackEnabled="false"
-                android:inputType="number"
+                android:inputType="textPersonName"
                 android:textColorLink="@android:color/holo_blue_light"
                 android:textIsSelectable="true" />
 
