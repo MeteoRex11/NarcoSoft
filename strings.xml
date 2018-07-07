@@ -16,7 +16,8 @@
     <string name="pa_q11">Were there any problems which hindered the facilitation of this activity?</string>
     <string name="pa_q12">If yes, what were these problems?</string>
     <string name="pa_q13">Was there any existing infrastructure available to carry out the activity?</string>
-    <string name="pa_q14">What efforts did you make to create an additional infrastructure for the same?</string>
+    <string name="pa_q14">What problems did you face regarding the infrastructure?</string>
+    <string name="pa_q15">What efforts did you make to create an additional infrastructure for the same?</string>
     <string name="PButton">Proceed</string>
     <string name="yb2">Yes</string>
     <string name="nb2">No</string>
