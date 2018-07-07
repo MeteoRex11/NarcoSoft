@@ -1,37 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent" android:layout_height="match_parent">
 
+
+
     <Button
+
         android:id="@+id/MoreEntriesButton"
+
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
+
         android:layout_alignParentTop="true"
+
         android:layout_centerHorizontal="true"
+
         android:layout_marginTop="131dp"
+
         android:background="@color/colorAccent"
+
         android:paddingBottom="20dp"
+
         android:paddingLeft="30dp"
+
         android:paddingRight="30dp"
+
         android:paddingTop="20dp"
+
         android:text="@string/MoreEntriesBttn"
+
         android:textColor="@android:color/background_light"
+
         android:onClick="MoreEntries"/>
 
 
+
+
+
     <Button
+
         android:id="@+id/SubmitButton"
+
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
+
         android:layout_below="@+id/MoreEntriesButton"
+
         android:layout_centerHorizontal="true"
+
         android:layout_marginTop="83dp"
+
         android:background="@color/colorAccent"
+
         android:elevation="0dp"
+
         android:paddingBottom="15dp"
+
         android:paddingLeft="30dp"
+
         android:paddingRight="30dp"
+
         android:paddingTop="15dp"
+
         android:text="@string/finishButton"
+
+        android:onClick="Finish"
+
         android:textColor="@android:color/background_light"/>
+
 </RelativeLayout>
+
