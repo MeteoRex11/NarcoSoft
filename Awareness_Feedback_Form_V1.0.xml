@@ -26,7 +26,7 @@
                 android:layout_marginTop="50dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="Have you performed any activity to make people aware about narcotics and their ill effects, successfully?"
+                android:text="@string/a_q1"
                 android:textColor="@android:color/background_light" />
 
 
@@ -42,9 +42,9 @@
                 android:id="@+id/a_noButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/AwarenessProceedButton"
+                android:layout_alignEnd="@+id/AwarenessProceedButton"
                 android:layout_below="@+id/a_q1"
-                android:text="No" />
+                android:text="Only Attempted" />
 
 
             <TextView
@@ -56,7 +56,7 @@
                 android:layout_marginTop="50dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="If yes, what is the activity?"
+                android:text="@string/a_q2"
                 android:textColor="@android:color/background_light" />
 
             <RadioGroup
@@ -102,10 +102,10 @@
                     android:layout_height="wrap_content"
                     android:layout_alignStart="@+id/a_q2"
                     android:layout_below="@+id/CommunityButton"
-                    android:text="Any other activity" />   
+                    android:text="Any other activity" />
 
             </RadioGroup>
-            
+
 
             <TextView
                 android:id="@+id/a_q3"
@@ -116,7 +116,7 @@
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="How many people were present near the activity area?"
+                android:text="@string/a_q3"
                 android:textColor="@android:color/background_light" />
 
             <EditText
@@ -129,7 +129,7 @@
                 android:inputType="textPersonName"
                 android:textColorLink="@android:color/holo_blue_light"
                 android:textIsSelectable="true" />
-            
+
 
             <TextView
                 android:id="@+id/a_q4"
@@ -140,7 +140,7 @@
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="Was there any feedback given by the people?"
+                android:text="@string/a_q4"
                 android:textColor="@android:color/background_light" />
 
             <EditText
@@ -173,10 +173,8 @@
                 android:text="@string/PButton"
                 android:textColor="@android:color/background_light" />
 
-
-
-
         </RelativeLayout>
+
     </ScrollView>
 
 </LinearLayout>
