@@ -14,6 +14,10 @@
     <string name="yesButton">Yes</string>
     <string name="noButton">No</string>
     <string name="pa_q2">What is the activity you have promoted?</string>
+    <string name="pa_rb_1">Sports</string>
+    <string name="pa_rb_2">Cultural Activities</string>
+    <string name="pa_rb_3">Social Service Activities</string>
+    <string name="pa_rb_4">Other Activities</string>
     <string name="pa_q3">Where was this activity performed?</string>
     <string name="pa_q4">At what time was this activity performed?</string>
     <string name="pa_q5">How long did this activity last?</string>
@@ -40,13 +44,16 @@
 
     <string name="a_q1">Have you successfully performed any activity to make people aware about narcotics and their ill effects? </string>
     <string name="a_q2">What was the activity?</string>
+    <string name="rb_1">Short Film</string>
+    <string name="rb_2">Nukkad Natak</string>
+    <string name="rb_3">Held a public meeting</string>
+    <string name="rb_4">Addressed a sath/local gathering</string>
+    <string name="rb_5">Spoke at a festival</string>
+    <string name="rb_6">Any Other Activity</string>
     <string name="a_q3">How many people were present near the activity area?</string>
     <string name="a_q4">Was there any feedback given by the people?</string>
-    <string name="rb_1">Street Play</string>
-    <string name="rb_2">Short Film</string>
-    <string name="rb_3">Group Discussion</string>
-    <string name="rb_4">Community Awareness Programs</string>
-    <string name="rb_5">Any Other Activity</string>
+    <string name="a_q5">What problems were faced by you?</string>
+    <string name="a_q6">Any suggestions?</string>
 
     <string name="identification">Identification</string>
     <string name="motivation">Motivation</string>
