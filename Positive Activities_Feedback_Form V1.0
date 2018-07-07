@@ -1,84 +1,3 @@
-.............................................................................................................................
-
-- MainActivity.java
-
-.............................................................................................................................
-
-package com.example.abc.narcosoft2;
-
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.content.Intent;
-import android.view.View;
-import android.widget.Button;
-import android.widget.RadioButton;
-import android.widget.TextView;
-import android.widget.EditText;
-
-
-
-public class MainActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.cat_sub);
-
-        // Declaring all the objects
-        //--------------------------
-
-        final TextView q1 = (TextView) findViewById(R.id.q1);
-        final TextView q2 = (TextView) findViewById(R.id.q2);
-        final TextView q3 = (TextView) findViewById(R.id.q3);
-        final TextView q4 = (TextView) findViewById(R.id.q4);
-        final TextView q5 = (TextView) findViewById(R.id.q5);
-        final TextView q6 = (TextView) findViewById(R.id.q6);
-        final TextView q7 = (TextView) findViewById(R.id.q7);
-        final TextView q8 = (TextView) findViewById(R.id.q8);
-        final TextView q9 = (TextView) findViewById(R.id.q9);
-        final TextView q10 = (TextView) findViewById(R.id.q10);
-        final TextView q11 = (TextView) findViewById(R.id.q11);
-        final TextView q12 = (TextView) findViewById(R.id.q12);
-
-        final RadioButton A1_Yes = (RadioButton) findViewById(R.id.A1_Yes);
-        final RadioButton A1_No = (RadioButton) findViewById(R.id.A1_No);
-        final RadioButton yesButton2 = (RadioButton) findViewById(R.id.yesButton2);
-        final RadioButton noButton2 = (RadioButton) findViewById(R.id.noButton2);
-        final RadioButton yesButton3 = (RadioButton) findViewById(R.id.yesButton3);
-        final RadioButton noButton3 = (RadioButton) findViewById(R.id.noButton3);
-
-
-        final EditText a2 = (EditText) findViewById(R.id.a2);
-        final EditText a3 = (EditText) findViewById(R.id.a3);
-        final EditText a4 = (EditText) findViewById(R.id.a4);
-        final EditText a5 = (EditText) findViewById(R.id.a5);
-        final EditText a6 = (EditText) findViewById(R.id.a6);
-        final EditText a7 = (EditText) findViewById(R.id.a7);
-        final EditText a8 = (EditText) findViewById(R.id.a8);
-        final EditText a10 = (EditText) findViewById(R.id.a10);
-        final EditText a12 = (EditText) findViewById(R.id.a12);
-
-        final Button ProceedButton = (Button) findViewById(R.id.ProceedButton);
-
-    }
-
-    public void Proceed(View v) {
-        Intent i = new Intent(this, Submit_Screen.class);
-        startActivity(i);
-    }
-
-
-}
-
-
-
-.............................................................................................................................
-
-- Feedback Form Layout
-- (cat_sub.xml)
-
-.............................................................................................................................
-
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -118,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_marginTop="50dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="@string/q1"
+                android:text="Have you promoted any positive activity in your Mohalla?"
                 android:textColor="@android:color/background_light" />
 
             <TextView
@@ -130,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_marginTop="50dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="@string/q2"
+                android:text="@string/pa_q2"
                 android:textColor="@android:color/background_light" />
 
             <TextView
@@ -142,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="@string/q3"
+                android:text="@string/pa_q3"
                 android:textColor="@android:color/background_light" />
 
             <EditText
@@ -165,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="@string/q4"
+                android:text="@string/pa_q4"
                 android:textColor="@android:color/background_light" />
 
             <EditText
@@ -175,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_alignStart="@+id/f_a3"
                 android:layout_below="@+id/f_q4"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="time"
                 android:textColorLink="@android:color/holo_blue_light"
                 android:textIsSelectable="true" />
 
@@ -188,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="@string/q5"
+                android:text="@string/pa_q5"
                 android:textColor="@android:color/background_light" />
 
             <EditText
@@ -198,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_alignEnd="@+id/a4"
                 android:layout_below="@+id/f_q5"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="text|number"
                 android:textColorLink="@android:color/holo_blue_light"
                 android:textIsSelectable="true" />
 
@@ -211,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="@string/q6"
+                android:text="@string/pa_q6"
                 android:textColor="@android:color/background_light" />
 
             <EditText
@@ -221,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_alignStart="@+id/f_q4"
                 android:layout_below="@+id/f_q6"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:textColorLink="@android:color/holo_blue_light"
                 android:textIsSelectable="true" />
 
@@ -233,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_marginStart="21dp"
                 android:layout_toEndOf="@+id/A1_Yes"
                 android:hapticFeedbackEnabled="true"
-                android:text="@string/noButton" />
+                android:text="Only Attempted" />
 
             <RadioButton
                 android:id="@+id/A1_Yes"
@@ -253,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="@string/q7"
+                android:text="@string/pa_q7"
                 android:textColor="@android:color/background_light" />
 
             <EditText
@@ -263,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_alignStart="@+id/f_q4"
                 android:layout_below="@+id/f_q7"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:textColorLink="@android:color/holo_blue_light"
                 android:textIsSelectable="true" />
 
@@ -276,7 +195,7 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="@string/q8"
+                android:text="@string/pa_q8"
                 android:textColor="@android:color/background_light" />
 
             <EditText
@@ -299,8 +218,24 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="@string/q9"
+                android:text="@string/pa_q9"
                 android:textColor="@android:color/background_light" />
+
+            <RadioButton
+                android:id="@+id/yesButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_q9"
+                android:layout_below="@+id/f_q9"
+                android:text="@string/yb2" />
+
+            <RadioButton
+                android:id="@+id/noButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/A1_No"
+                android:layout_below="@+id/f_q9"
+                android:text="@string/nb2" />
 
             <TextView
                 android:id="@+id/f_q10"
@@ -311,7 +246,7 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="@string/q10"
+                android:text="@string/pa_q10"
                 android:textColor="@android:color/background_light" />
 
             <EditText
@@ -334,8 +269,24 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="@string/q11"
+                android:text="@string/pa_q11"
                 android:textColor="@android:color/background_light" />
+
+            <RadioButton
+                android:id="@+id/yesButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/f_q11"
+                android:layout_below="@+id/f_q11"
+                android:text="@string/yb3" />
+
+            <RadioButton
+                android:id="@+id/noButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/A1_No"
+                android:layout_below="@+id/f_q11"
+                android:text="@string/nb3" />
 
             <TextView
                 android:id="@+id/f_q12"
@@ -346,7 +297,7 @@ public class MainActivity extends AppCompatActivity {
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="@string/q12"
+                android:text="@string/pa_q12"
                 android:textColor="@android:color/background_light" />
 
             <EditText
@@ -378,154 +329,10 @@ public class MainActivity extends AppCompatActivity {
                 android:textColor="@android:color/background_light"
                 android:onClick="Proceed"/>
 
-            <RadioButton
-                android:id="@+id/yesButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/f_q9"
-                android:layout_below="@+id/f_q9"
-                android:text="@string/yb2" />
+           
 
-            <RadioButton
-                android:id="@+id/noButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/A1_No"
-                android:layout_below="@+id/f_q9"
-                android:text="@string/nb2" />
-
-            <RadioButton
-                android:id="@+id/yesButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/f_q11"
-                android:layout_below="@+id/f_q11"
-                android:text="@string/yb3" />
-
-            <RadioButton
-                android:id="@+id/noButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/A1_No"
-                android:layout_below="@+id/f_q11"
-                android:text="@string/nb3" />
+           
         </RelativeLayout>
     </ScrollView>
 
 </LinearLayout>
-.............................................................................................................................
-
-- Submit_Screen.java
-
-.............................................................................................................................
-
-
-package com.example.abc.narcosoft2;
-
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.content.Intent;
-import android.view.View;
-import android.widget.Button;
-
-
-
-public class Submit_Screen extends AppCompatActivity{
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.submit_screen);
-
-        final Button MoreEntriesButton = (Button) findViewById(R.id.MoreEntriesButton);
-        final Button SubmitButton = (Button) findViewById(R.id.SubmitButton);
-
-    }
-    public void MoreEntries(View v)
-    {
-        Intent i = new Intent(this, MainActivity.class);
-        startActivity(i);
-    }
-}
-
-.............................................................................................................................
-
-- Submit Screen Layout
-- (submit_screen.xml)
-
-.............................................................................................................................
-
-
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-
-    <Button
-        android:id="@+id/MoreEntriesButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="131dp"
-        android:background="@color/colorAccent"
-        android:paddingBottom="20dp"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:paddingTop="20dp"
-        android:text="@string/MoreEntriesBttn"
-        android:textColor="@android:color/background_light"
-        android:onClick="MoreEntries"/>
-
-
-    <Button
-        android:id="@+id/SubmitButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/MoreEntriesButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="83dp"
-        android:background="@color/colorAccent"
-        android:elevation="0dp"
-        android:paddingBottom="15dp"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:paddingTop="15dp"
-        android:text="@string/finishButton"
-        android:textColor="@android:color/background_light"/>
-</RelativeLayout>
-
-.............................................................................................................................
-
-- strings.xml
-
-.............................................................................................................................
-
-
-<resources>
-    <string name="app_name">Prevention</string>
-
-    <string name="q1">Have you succesfully performed an activity facilitating prevention?</string>
-    <string name="yesButton">Yes</string>
-    <string name="noButton">No</string>
-    <string name="q2">What is the activity you have performed?</string>
-    <string name="q3">Where was this activity performed?</string>
-    <string name="q4">At what time was this activity performed?</string>
-    <string name="q5">How long did this activity last?</string>
-    <string name="q6">How many people were invited to be involved in this activity?</string>
-    <string name="q7">How many people actually participated in this activity?</string>
-    <string name="q8">Who were the people participating in the activity?</string>
-    <string name="q9">Was there any official involved in the faciliation of this activity?</string>
-    <string name="q10">If yes, who was this official?</string>
-    <string name="q11">Were there any problems which hindered the faciliation of this activity?</string>
-    <string name="q12">If yes, what were these problems?</string>
-    <string name="PButton">Proceed</string>
-    <string name="yb2">Yes</string>
-    <string name="nb2">No</string>
-    <string name="nb3">No</string>
-    <string name="yb3">Yes</string>
-    <string name="finishButton">Finish</string>
-    <string name="MoreEntriesBttn">Add More Entries</string>
-</resources>
-
-
-.............................................................................................................................
