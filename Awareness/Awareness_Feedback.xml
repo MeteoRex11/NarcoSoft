@@ -66,43 +66,41 @@
                 android:layout_alignStart="@+id/a_q2"
                 android:layout_below="@+id/a_q2">
 
-            <RadioButton
-                android:id="@+id/ShortFilmButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Short Film" />
-
-            <RadioButton
-                android:id="@+id/StreetPlayButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/a_q2"
-                android:layout_below="@+id/ShortFilmButton"
-                android:text="Street Play" />
-
-            <RadioButton
-                android:id="@+id/GroupDiscussionButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/a_q2"
-                android:layout_below="@+id/StreetPlayButton"
-                android:text="Group Discussion" />
-
-            <RadioButton
-                android:id="@+id/CommunityButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/a_q2"
-                android:layout_below="@+id/GroupDiscussionButton"
-                android:text="Community Awareness Programs" />
-
                 <RadioButton
-                    android:id="@+id/OtherButton"
+                    android:id="@+id/rb1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/a_q2"
-                    android:layout_below="@+id/CommunityButton"
-                    android:text="Any other activity" />
+                    android:text="@string/rb_1" />
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rb_2" />
+
+                <RadioButton
+                    android:id="@+id/rb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rb_3" />
+
+                <RadioButton
+                    android:id="@+id/rb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rb_4" />
+
+                <RadioButton
+                    android:id="@+id/rb5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rb_5" />
+
+                <RadioButton
+                    android:id="@+id/rb6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rb_6" />
 
             </RadioGroup>
 
@@ -154,12 +152,58 @@
                 android:textColorLink="@android:color/holo_blue_light"
                 android:textIsSelectable="true" />
 
+            <TextView
+                android:id="@+id/a_q5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/a_a3"
+                android:layout_below="@+id/a_a4"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="@string/a_q5"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/a_a5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/a_a3"
+                android:layout_below="@+id/a_q5"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/a_q6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/a_a5"
+                android:layout_below="@+id/a_a5"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="@string/a_q6"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/a_a6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/a_a5"
+                android:layout_below="@+id/a_q6"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+
 
             <Button
                 android:id="@+id/AwarenessProceedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/a_a4"
+                android:layout_below="@+id/a_a6"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="25dp"
                 android:layout_marginLeft="50dp"
@@ -178,4 +222,3 @@
     </ScrollView>
 
 </LinearLayout>
-
