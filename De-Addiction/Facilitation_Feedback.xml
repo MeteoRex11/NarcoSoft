@@ -17,7 +17,6 @@
             android:layout_height="wrap_content">
 
 
-
             <TextView
                 android:id="@+id/d_f_q1"
                 android:layout_width="wrap_content"
@@ -27,7 +26,7 @@
                 android:layout_marginTop="50dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="@string/d_i_q1"
+                android:text="@string/d_f_q1"
                 android:textColor="@android:color/background_light" />
 
             <EditText
@@ -51,7 +50,7 @@
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="@string/d_i_q2"
+                android:text="@string/d_f_q2"
                 android:textColor="@android:color/background_light" />
 
             <EditText
@@ -62,7 +61,7 @@
                 android:layout_below="@+id/d_f_q2"
                 android:ems="10"
                 android:hapticFeedbackEnabled="false"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:textColorLink="@android:color/holo_blue_light"
                 android:textIsSelectable="true" />
 
@@ -75,7 +74,7 @@
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="@string/d_i_q3"
+                android:text="@string/d_f_q3"
                 android:textColor="@android:color/background_light" />
 
             <EditText
@@ -85,7 +84,7 @@
                 android:layout_alignStart="@+id/d_f_q3"
                 android:layout_below="@+id/d_f_q3"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:textColorLink="@android:color/holo_blue_light"
                 android:textIsSelectable="true" />
 
@@ -98,7 +97,7 @@
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="@string/d_i_q4"
+                android:text="@string/d_f_q4"
                 android:textColor="@android:color/background_light" />
 
             <EditText
@@ -108,7 +107,7 @@
                 android:layout_alignStart="@+id/d_f_q4"
                 android:layout_below="@+id/d_f_q4"
                 android:ems="10"
-                android:inputType="number"
+                android:inputType="text|textPersonName|number"
                 android:textColorLink="@android:color/holo_blue_light"
                 android:textIsSelectable="true" />
 
@@ -121,7 +120,7 @@
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="@string/d_i_q5"
+                android:text="@string/d_f_q5"
                 android:textColor="@android:color/background_light" />
 
             <EditText
@@ -144,7 +143,7 @@
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="@string/d_i_q6"
+                android:text="@string/d_f_q6"
                 android:textColor="@android:color/background_light" />
 
             <EditText
@@ -158,104 +157,13 @@
                 android:textColorLink="@android:color/holo_blue_light"
                 android:textIsSelectable="true" />
 
-            <TextView
-                android:id="@+id/d_f_q7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/d_f_a6"
-                android:layout_below="@+id/d_f_a6"
-                android:layout_marginTop="25dp"
-                android:background="@color/colorAccent"
-                android:padding="7dp"
-                android:text="@string/d_i_q7"
-                android:textColor="@android:color/background_light" />
-
-            <EditText
-                android:id="@+id/d_f_a7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/d_f_q7"
-                android:layout_below="@+id/d_f_q7"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textColorLink="@android:color/holo_blue_light"
-                android:textIsSelectable="true" />
-
-            <TextView
-                android:id="@+id/d_f_q8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/d_f_a7"
-                android:layout_below="@+id/d_f_a7"
-                android:layout_marginTop="25dp"
-                android:background="@color/colorAccent"
-                android:padding="7dp"
-                android:text="@string/d_i_q8"
-                android:textColor="@android:color/background_light" />
-
-            <EditText
-                android:id="@+id/d_f_a8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/d_f_q8"
-                android:layout_below="@+id/d_f_q8"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textColorLink="@android:color/holo_blue_light"
-                android:textIsSelectable="true" />
-
-            <TextView
-                android:id="@+id/d_f_q9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/d_f_a8"
-                android:layout_below="@+id/d_f_a8"
-                android:layout_marginTop="25dp"
-                android:background="@color/colorAccent"
-                android:padding="7dp"
-                android:text="@string/d_i_q9"
-                android:textColor="@android:color/background_light" />
-
-            <EditText
-                android:id="@+id/d_f_a9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/d_f_q9"
-                android:layout_below="@+id/d_f_q9"
-                android:ems="10"
-                android:inputType="time"
-                android:textColorLink="@android:color/holo_blue_light"
-                android:textIsSelectable="true" />
-
-            <TextView
-                android:id="@+id/d_f_q10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/d_f_a9"
-                android:layout_marginTop="25dp"
-                android:layout_below="@+id/d_f_a9"
-                android:background="@color/colorAccent"
-                android:padding="7dp"
-                android:text="@string/d_i_q10"
-                android:textColor="@android:color/background_light" />
-
-            <EditText
-                android:id="@+id/d_f_a10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/d_f_q10"
-                android:layout_below="@+id/d_f_q10"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textColorLink="@android:color/holo_blue_light"
-                android:textIsSelectable="true" />
 
 
             <Button
                 android:id="@+id/ProceedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/d_f_a10"
+                android:layout_below="@+id/d_f_a6"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="25dp"
                 android:layout_marginLeft="50dp"
