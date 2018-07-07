@@ -4,7 +4,7 @@
     <string name="pa_q1">Have you promoted any positive activity in your Mohalla?</string>
     <string name="yesButton">Yes</string>
     <string name="noButton">No</string>
-    <string name="pa_q2">What is the activity you have performed?</string>
+    <string name="pa_q2">What is the activity you have promoted?</string>
     <string name="pa_q3">Where was this activity performed?</string>
     <string name="pa_q4">At what time was this activity performed?</string>
     <string name="pa_q5">How long did this activity last?</string>
