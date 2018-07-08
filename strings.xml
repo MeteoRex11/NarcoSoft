@@ -9,12 +9,10 @@
     <string name="sign_up">Sign Up</string>
     <string name="dob">DOB</string>
 
-
-
     <string name="identification">Identification</string>
     <string name="motivation">Motivation</string>
     <string name="facilitation">Facilitation</string>
-    
+
     <string name="d_m_q1">Where did you approach the victim, in order to motivate them to stop drug abuse?</string>
     <string name="d_m_q2">How did you approach them?</string>
     <string name="d_m_q3">What problems were faced by you regarding the victims?</string>
@@ -48,6 +46,25 @@
     <string name="d_i_q12">Who are the people supporting these traffickers?</string>
 
 
+    <string name="p_i_q1">How many vulnerable groups have you identified this month?</string>
+    <string name="p_i_q2">How many of these vulnerable groups have you counseled?</string>
+    <string name="p_i_q3">How many of them have been advised for specific expert counseling?</string>
+    <string name="p_i_q4">What problems were faced while organising expert counseling for the vulnerable individuals?</string>
+    <string name="p_i_q5">How many of the vulnerable individuals have been have been linked to a positive activity?</string>
+    <string name="p_i_q6">What problems were faced from individual/family perspective, regarding the acceptance of a need for protection?</string>
+    <string name="p_i_q7">Did you face any other problems regarding identification of vulnerable groups?</string>
+
+    <string name="p_p_q1">Who are the people supporting these traffickers?</string>
+    <string name="p_p_q2">Who are the people supporting these traffickers?</string>
+    <string name="p_p_q3">Who are the people supporting these traffickers?</string>
+    <string name="p_p_q4">Who are the people supporting these traffickers?</string>
+    <string name="p_p_q5">Who are the people supporting these traffickers?</string>
+    <string name="p_p_q6">Who are the people supporting these traffickers?</string>
+    <string name="p_p_q7">Who are the people supporting these traffickers?</string>
+    <string name="p_p_q8">Who are the people supporting these traffickers?</string>
+    <string name="p_p_q9">Who are the people supporting these traffickers?</string>
+
+
     <string name="a_q1">Have you successfully performed any activity to make people aware about narcotics and their ill effects? </string>
     <string name="a_q2">What was the activity?</string>
     <string name="rb_1">Short Film</string>
@@ -60,7 +77,7 @@
     <string name="a_q4">Was there any feedback given by the people?</string>
     <string name="a_q5">What problems were faced by you?</string>
     <string name="a_q6">Any suggestions?</string>
-    
+
 
 
     <string name="pa_q1">Have you promoted any positive activity in your Mohalla?</string>
@@ -95,8 +112,8 @@
     <string name="upload">Upload a picture of the activity (In a  1:1 Ratio)</string>
     <string name="picUpload">Upload</string>
 
-    
 
-   
+
+
 
 </resources>
