@@ -69,10 +69,14 @@
 
     <string name="d_f_q1">How many drug abuse victims have you approached this month?</string>
     <string name="d_f_q2">How many victims have to be visited again to be convinced, to get treated?</string>
-    <string name="d_f_q3">How many of them contacted an OOAT centre or any other De-addiction Centre?</string>
+    <string name="d_f_q3">How many of them have been linked to an OOAT centre or any other De-addiction Centre?</string>
     <string name="d_f_q4">Which centre was contacted?</string>
     <string name="d_f_q5">What issues were faced regarding the OAAT Centres/ De-addiction Centres?</string>
-    <string name="d_f_q6">Did you face any other problem ?</string>
+    <string name="d_f_q6">How many people dropped out from the treatment?</string>
+    <string name="d_f_q7">What was the reason for them dropping out?</string>
+    <string name="d_f_q8">How many people successfully completed their treatment?</string>
+    <string name="d_f_q9">What behavioural change have you observed in them?</string>
+    <string name="d_f_q10">Did you face any other problem ?</string>
 
     <string name="d_i_q1">How many people are known to use narcotics in the Mohalla?</string>
     <string name="d_i_q2">What types of narcotics are being consumed in the area?</string>
