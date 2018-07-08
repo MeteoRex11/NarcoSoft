@@ -43,17 +43,17 @@ public class Submit_screen extends AppCompatActivity{
             finish();
         }
         else if(getCallingActivity().getClassName().equals(Identification_Feedback.class.getName())){
-            Intent i = new Intent(this, Identification_Feedback.class);
+            Intent i = new Intent(this, Deaddiction.class);
             startActivity(i);
             finish();
         }
         else if(getCallingActivity().getClassName().equals(Motivation_feedback.class.getName())){
-            Intent i = new Intent(this, Motivation_feedback.class);
+            Intent i = new Intent(this, Deaddiction.class);
             startActivity(i);
             finish();
         }
         else if(getCallingActivity().getClassName().equals(Facilitation_Feedback.class.getName())){
-            Intent i = new Intent(this, Facilitation_Feedback.class);
+            Intent i = new Intent(this, Deaddiction.class);
             startActivity(i);
             finish();
         }
