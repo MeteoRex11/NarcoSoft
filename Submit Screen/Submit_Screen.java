@@ -32,7 +32,12 @@ public class Submit_screen extends AppCompatActivity{
             startActivity(i);
             finish();
         }
-        else if(getCallingActivity().getClassName().equals(Protection.class.getName())){
+        else if(getCallingActivity().getClassName().equals(Vulnerable_Group_Protection.class.getName())){
+            Intent i = new Intent(this, Protection.class);
+            startActivity(i);
+            finish();
+        }
+        else if(getCallingActivity().getClassName().equals(Vulnerable_Group_Identification.class.getName())){
             Intent i = new Intent(this, Protection.class);
             startActivity(i);
             finish();
