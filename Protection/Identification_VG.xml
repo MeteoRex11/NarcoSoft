@@ -88,6 +88,8 @@
                 android:textColorLink="@android:color/holo_blue_light"
                 android:textIsSelectable="true" />
 
+
+
             <TextView
                 android:id="@+id/p_i_q4"
                 android:layout_width="wrap_content"
@@ -97,108 +99,15 @@
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
-                android:text="@string/p_i_q4"
+                android:text="@string/a_q6"
                 android:textColor="@android:color/background_light" />
 
             <EditText
                 android:id="@+id/p_i_a4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/p_i_q4"
+                android:layout_alignEnd="@+id/p_i_a3"
                 android:layout_below="@+id/p_i_q4"
-                android:ems="10"
-                android:inputType="text|textPersonName"
-                android:textColorLink="@android:color/holo_blue_light"
-                android:textIsSelectable="true" />
-
-            <TextView
-                android:id="@+id/p_i_q5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/p_i_a4"
-                android:layout_below="@+id/p_i_a4"
-                android:layout_marginTop="25dp"
-                android:background="@color/colorAccent"
-                android:padding="7dp"
-                android:text="@string/p_i_q5"
-                android:textColor="@android:color/background_light" />
-
-            <EditText
-                android:id="@+id/p_i_a5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/p_i_a4"
-                android:layout_below="@+id/p_i_q5"
-                android:ems="10"
-                android:inputType="number"
-                android:textColorLink="@android:color/holo_blue_light"
-                android:textIsSelectable="true" />
-
-
-            <TextView
-                android:id="@+id/p_i_q6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/p_i_a5"
-                android:layout_below="@+id/p_i_a5"
-                android:layout_marginTop="25dp"
-                android:background="@color/colorAccent"
-                android:padding="7dp"
-                android:text="@string/p_i_q6"
-                android:textColor="@android:color/background_light" />
-
-            <EditText
-                android:id="@+id/p_i_a6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/p_i_a5"
-                android:layout_below="@+id/p_i_q6"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textColorLink="@android:color/holo_blue_light"
-                android:textIsSelectable="true" />
-
-            <TextView
-                android:id="@+id/p_i_q7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/p_i_a6"
-                android:layout_below="@+id/p_i_a6"
-                android:layout_marginTop="25dp"
-                android:background="@color/colorAccent"
-                android:padding="7dp"
-                android:text="@string/p_i_q7"
-                android:textColor="@android:color/background_light" />
-
-            <EditText
-                android:id="@+id/p_i_a7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/p_i_q7"
-                android:layout_below="@+id/p_i_q7"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textColorLink="@android:color/holo_blue_light"
-                android:textIsSelectable="true" />
-
-            <TextView
-                android:id="@+id/p_i_q8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/p_i_a7"
-                android:layout_below="@+id/p_i_a7"
-                android:layout_marginTop="25dp"
-                android:background="@color/colorAccent"
-                android:padding="7dp"
-                android:text="@string/a_q6"
-                android:textColor="@android:color/background_light" />
-
-            <EditText
-                android:id="@+id/p_i_a8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/p_i_a7"
-                android:layout_below="@+id/p_i_q8"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:textColorLink="@android:color/holo_blue_light"
@@ -209,7 +118,7 @@
                 android:id="@+id/ProceedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/p_i_a8"
+                android:layout_below="@+id/p_i_a4"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="25dp"
                 android:layout_marginLeft="50dp"
