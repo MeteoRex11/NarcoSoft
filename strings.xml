@@ -48,21 +48,15 @@
 
     <string name="p_i_q1">How many vulnerable groups have you identified this month?</string>
     <string name="p_i_q2">How many of these vulnerable groups have you counseled?</string>
-    <string name="p_i_q3">How many of them have been advised for specific expert counseling?</string>
-    <string name="p_i_q4">What problems were faced while organising expert counseling for the vulnerable individuals?</string>
-    <string name="p_i_q5">How many of the vulnerable individuals have been have been linked to a positive activity?</string>
-    <string name="p_i_q6">What problems were faced from individual/family perspective, regarding the acceptance of a need for protection?</string>
-    <string name="p_i_q7">Did you face any other problems regarding identification of vulnerable groups?</string>
+    <string name="p_i_q3">Did you face any other problems regarding identification of vulnerable groups?</string>
 
-    <string name="p_p_q1">Who are the people supporting these traffickers?</string>
-    <string name="p_p_q2">Who are the people supporting these traffickers?</string>
-    <string name="p_p_q3">Who are the people supporting these traffickers?</string>
-    <string name="p_p_q4">Who are the people supporting these traffickers?</string>
-    <string name="p_p_q5">Who are the people supporting these traffickers?</string>
-    <string name="p_p_q6">Who are the people supporting these traffickers?</string>
-    <string name="p_p_q7">Who are the people supporting these traffickers?</string>
-    <string name="p_p_q8">Who are the people supporting these traffickers?</string>
-    <string name="p_p_q9">Who are the people supporting these traffickers?</string>
+    <string name="p_p_q1">What efforts did you make for the protection of the identified vulnerable groups?</string>
+    <string name="p_p_q2">What activities did you promote for their protection?</string>
+    <string name="p_p_q3">How many of the vulnerable individuals have been have been linked to a positive activity?</string>
+    <string name="p_p_q4">How many of them have been advised for specific expert counseling?</string>
+    <string name="p_p_q5">What problems were faced while organising expert counseling for the vulnerable individuals?</string>
+    <string name="p_p_q6">What problems were faced from individual/family perspective, regarding the acceptance of a need for protection?</string>
+    <string name="p_p_q7">Did you face any other problems regarding the protection of these vulnerable groups?</string>
 
 
     <string name="a_q1">Have you successfully performed any activity to make people aware about narcotics and their ill effects? </string>
