@@ -157,13 +157,38 @@
                 android:textColorLink="@android:color/holo_blue_light"
                 android:textIsSelectable="true" />
 
+            <TextView
+                android:id="@+id/d_f_q7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/d_f_a6"
+                android:layout_below="@+id/d_f_a6"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:padding="7dp"
+                android:text="@string/a_q6"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/d_f_a7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/d_f_a6"
+                android:layout_below="@+id/d_f_q7"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textIsSelectable="true" />
+            
+            
+
 
 
             <Button
                 android:id="@+id/ProceedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/d_f_a6"
+                android:layout_below="@+id/d_f_a7"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="25dp"
                 android:layout_marginLeft="50dp"
