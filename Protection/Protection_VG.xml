@@ -37,7 +37,7 @@
                 android:layout_below="@+id/p_p_q1"
                 android:ems="10"
                 android:hapticFeedbackEnabled="false"
-                android:inputType="text|textPersonName|number"
+                android:inputType="text|textPersonName"
                 android:textColorLink="@android:color/holo_blue_light"
                 android:textIsSelectable="true" />
 
@@ -127,7 +127,7 @@
                 android:id="@+id/p_p_a5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/p_p_a4"
+                android:layout_alignEnd="@+id/p_i_a4"
                 android:layout_below="@+id/p_p_q5"
                 android:ems="10"
                 android:inputType="text"
