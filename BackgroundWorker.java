@@ -214,6 +214,70 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
 
         }
 
+        else if(type.equals("deaddiction identification"))
+        {
+            String Users = params[1];
+            String Narcotics_Type = params[2];;
+            String Narcotics_Quantity = params[3];;
+            String Narcotics_Price =  params[4];;
+            String Drug_Abuse_Reason = params[5];;
+            String Drug_Abuse_Hotspot = params[6];;
+            String Drug_Abusers_Gathering_Areas = params[7];;
+            String Supply_Time = params[8];;
+            String Abuse_Time = params[9];;
+            String Place_Of_Purchase = params[10];;
+            String Suggestions = params[11];;
+
+            try {
+
+                URL url = new URL(submit_url);
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.setRequestMethod("POST");
+                httpURLConnection.setDoOutput(true);
+                OutputStream outputStream = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
+
+                String data_string = URLEncoder.encode("Number of Narcotics Users", "UTF-8") + "=" + URLEncoder.encode(Users, "UTF-8") + "&"
+                        + URLEncoder.encode("Type of Drug Used", "UTF-8") + "=" + URLEncoder.encode(Narcotics_Type, "UTF-8") + "&"
+                        + URLEncoder.encode("Quantity of Drugs Used", "UTF-8") + "=" + URLEncoder.encode(Narcotics_Quantity, "UTF-8") + "&"
+                        + URLEncoder.encode("Price of Drugs", "UTF-8") + "=" + URLEncoder.encode(Narcotics_Price, "UTF-8") + "&"
+                        + URLEncoder.encode("Reason for Drug Abuse", "UTF-8") + "=" + URLEncoder.encode(Drug_Abuse_Reason, "UTF-8") + "&"
+                        + URLEncoder.encode("Drug Abuse Prone Area", "UTF-8") + "=" + URLEncoder.encode(Drug_Abuse_Hotspot, "UTF-8") + "&"
+                        + URLEncoder.encode("Gathering Area for Abusers", "UTF-8") + "=" + URLEncoder.encode(Drug_Abusers_Gathering_Areas, "UTF-8") + "&"
+                        + URLEncoder.encode("Time of Supply", "UTF-8") + "=" + URLEncoder.encode(Supply_Time, "UTF-8")+ "&"
+                        + URLEncoder.encode("Time of Consumption", "UTF-8") + "=" + URLEncoder.encode(Abuse_Time , "UTF-8")+ "&"
+                        + URLEncoder.encode("Place of Purchase", "UTF-8") + "=" + URLEncoder.encode(Place_Of_Purchase, "UTF-8")+ "&"
+                        + URLEncoder.encode("Suggestions", "UTF-8") + "=" + URLEncoder.encode(Suggestions, "UTF-8");
+
+                bufferedWriter.write(data_string);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                outputStream.close();
+
+                InputStream inputStream = httpURLConnection.getInputStream();
+                BufferedReader bufferedReader =new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
+                String result="";
+                String line="";
+                while((line=bufferedReader.readLine())!=null){
+                    result +=line;
+                }
+
+
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+
+                return result;
+
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+
+        }
+
         return null;
 
 
