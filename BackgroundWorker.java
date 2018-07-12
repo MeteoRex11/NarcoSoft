@@ -278,6 +278,64 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
 
         }
 
+        else if(type.equals("deaddiction motivation"))
+        {
+            String Approach_Place = params[1];
+            String Approach_Method = params[2];
+            String Victim_Approach_Problems =params[3];;
+            String Family_Approach_Problems =  params[4];
+            String Arguments = params[5];
+            String Convincing_Factor = params[6];
+            String Victim_Attitude = params[7];
+            String Suggestions = params[8];
+
+            try {
+
+                URL url = new URL(submit_url);
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.setRequestMethod("POST");
+                httpURLConnection.setDoOutput(true);
+                OutputStream outputStream = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
+
+                String data_string = URLEncoder.encode("Place of Approach", "UTF-8") + "=" + URLEncoder.encode(Approach_Place, "UTF-8") + "&"
+                        + URLEncoder.encode("Method of Approach", "UTF-8") + "=" + URLEncoder.encode(Approach_Method, "UTF-8") + "&"
+                        + URLEncoder.encode("Problems Regarding Victims", "UTF-8") + "=" + URLEncoder.encode(Victim_Approach_Problems, "UTF-8") + "&"
+                        + URLEncoder.encode("Problems Regarding Victims' Families", "UTF-8") + "=" + URLEncoder.encode(Family_Approach_Problems, "UTF-8") + "&"
+                        + URLEncoder.encode("Arguments given by them", "UTF-8") + "=" + URLEncoder.encode(Arguments, "UTF-8") + "&"
+                        + URLEncoder.encode("Convincing Factor Given", "UTF-8") + "=" + URLEncoder.encode(Convincing_Factor, "UTF-8") + "&"
+                        + URLEncoder.encode("Attitude of Victims", "UTF-8") + "=" + URLEncoder.encode(Victim_Attitude, "UTF-8")+ "&"
+                        + URLEncoder.encode("Suggestions", "UTF-8") + "=" + URLEncoder.encode(Suggestions, "UTF-8");
+
+                bufferedWriter.write(data_string);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                outputStream.close();
+
+                InputStream inputStream = httpURLConnection.getInputStream();
+                BufferedReader bufferedReader =new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
+                String result="";
+                String line="";
+                while((line=bufferedReader.readLine())!=null){
+                    result +=line;
+                }
+
+
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+
+                return result;
+
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+
+        }
+
         return null;
 
 
