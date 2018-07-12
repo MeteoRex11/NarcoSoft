@@ -110,7 +110,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
 
                 String data_string = URLEncoder.encode("Awareness Activity Completion", "UTF-8") + "=" + URLEncoder.encode(Awareness_Activity_Status, "UTF-8") + "&"
-                        + URLEncoder.encode("Awareness Activity", "UTF-8") + "=" + URLEncoder.encode(Awareness_Activity, "UTF-8") + "&"
+                        + URLEncoder.encode("Activity Performed for Awareness", "UTF-8") + "=" + URLEncoder.encode(Awareness_Activity, "UTF-8") + "&"
                         + URLEncoder.encode("Activity Audience", "UTF-8") + "=" + URLEncoder.encode(Activity_Audience, "UTF-8") + "&"
                         + URLEncoder.encode("Audience Feedback", "UTF-8") + "=" + URLEncoder.encode(Audience_Feedback, "UTF-8") + "&"
                         + URLEncoder.encode("Problems Faced", "UTF-8") + "=" + URLEncoder.encode(Problems, "UTF-8") + "&"
@@ -175,20 +175,20 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
 
                 String data_string = URLEncoder.encode("Positive Activity Completion", "UTF-8") + "=" + URLEncoder.encode(Positive_Activity_Status, "UTF-8") + "&"
-                        + URLEncoder.encode("Positive Activity", "UTF-8") + "=" + URLEncoder.encode(Positive_Activity, "UTF-8") + "&"
+                        + URLEncoder.encode("Positive Activity Performed", "UTF-8") + "=" + URLEncoder.encode(Positive_Activity, "UTF-8") + "&"
                         + URLEncoder.encode("Activity Venue", "UTF-8") + "=" + URLEncoder.encode(Activity_Venue, "UTF-8") + "&"
-                        + URLEncoder.encode("Activity Time", "UTF-8") + "=" + URLEncoder.encode(Activity_Time, "UTF-8") + "&"
+                        + URLEncoder.encode("Time at Which Activity Was Performed", "UTF-8") + "=" + URLEncoder.encode(Activity_Time, "UTF-8") + "&"
                         + URLEncoder.encode("Activity Duration", "UTF-8") + "=" + URLEncoder.encode(Activity_Duration, "UTF-8") + "&"
-                        + URLEncoder.encode("Number of People Invited", "UTF-8") + "=" + URLEncoder.encode(Potential_Participants_Number, "UTF-8") + "&"
-                        + URLEncoder.encode("Number of Participants", "UTF-8") + "=" + URLEncoder.encode(Actual_Participants_Number, "UTF-8") + "&"
+                        + URLEncoder.encode("Number of People Invited to Participate", "UTF-8") + "=" + URLEncoder.encode(Potential_Participants_Number, "UTF-8") + "&"
+                        + URLEncoder.encode("Actual Number of Participants", "UTF-8") + "=" + URLEncoder.encode(Actual_Participants_Number, "UTF-8") + "&"
                         + URLEncoder.encode("Participants", "UTF-8") + "=" + URLEncoder.encode(Participants, "UTF-8")+ "&"
-                        + URLEncoder.encode("Official's Availability", "UTF-8") + "=" + URLEncoder.encode(Official_Availability, "UTF-8")+ "&"
-                        + URLEncoder.encode("Official's Identity", "UTF-8") + "=" + URLEncoder.encode(Official_Identity, "UTF-8")+ "&"
-                        + URLEncoder.encode("Problem Existence", "UTF-8") + "=" + URLEncoder.encode(Problem_Status, "UTF-8")+ "&"
+                        + URLEncoder.encode("Availability of an Official", "UTF-8") + "=" + URLEncoder.encode(Official_Availability, "UTF-8")+ "&"
+                        + URLEncoder.encode("Identity of the Official", "UTF-8") + "=" + URLEncoder.encode(Official_Identity, "UTF-8")+ "&"
+                        + URLEncoder.encode("Existence of Problem", "UTF-8") + "=" + URLEncoder.encode(Problem_Status, "UTF-8")+ "&"
                         + URLEncoder.encode("Problem", "UTF-8") + "=" + URLEncoder.encode(Problems, "UTF-8")+ "&"
                         + URLEncoder.encode("Existing Infrastructure", "UTF-8") + "=" + URLEncoder.encode(Existing_Infrastructure, "UTF-8")+ "&"
-                        + URLEncoder.encode("Changes made in Infrastructure", "UTF-8") + "=" + URLEncoder.encode(Infrastructure_Changes, "UTF-8") + "&"
-                        + URLEncoder.encode("Problems faced regarding Infrastructure", "UTF-8") + "=" + URLEncoder.encode(Infrastructure_Problems, "UTF-8")  + "&"
+                        + URLEncoder.encode("Changes Made in Infrastructure", "UTF-8") + "=" + URLEncoder.encode(Infrastructure_Changes, "UTF-8") + "&"
+                        + URLEncoder.encode("Problems Faced Regarding Infrastructure", "UTF-8") + "=" + URLEncoder.encode(Infrastructure_Problems, "UTF-8")  + "&"
                         + URLEncoder.encode("Suggestions", "UTF-8") + "=" + URLEncoder.encode(Suggestions, "UTF-8");
 
                 bufferedWriter.write(data_string);
