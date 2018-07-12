@@ -19,41 +19,49 @@
 
             <TextView
                 android:id="@+id/a_q1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="45dp"
-                android:layout_marginTop="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="100dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
                 android:text="@string/a_q1"
                 android:textColor="@android:color/background_light" />
 
-
-            <RadioButton
-                android:id="@+id/a_yesButton"
+            <RadioGroup
+                android:id="@+id/a_RB1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/a_q1"
-                android:layout_below="@+id/a_q1"
-                android:text="Yes" />
+                android:layout_below="@id/a_q1"
+                android:orientation="horizontal">
 
-            <RadioButton
-                android:id="@+id/a_noButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/AwarenessProceedButton"
-                android:layout_below="@+id/a_q1"
-                android:text="Only Attempted" />
+                <RadioButton
+                    android:id="@+id/a_yesButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/a_noButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Only Attempted" />
+
+            </RadioGroup>
+
+
 
 
             <TextView
                 android:id="@+id/a_q2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/a_q1"
-                android:layout_below="@+id/a_q1"
-                android:layout_marginTop="50dp"
+                android:layout_below="@+id/a_RB1"
+                android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
                 android:text="@string/a_q2"
@@ -107,7 +115,7 @@
 
             <TextView
                 android:id="@+id/a_q3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/a_q2"
                 android:layout_below="@+id/RGrp"
@@ -119,7 +127,7 @@
 
             <EditText
                 android:id="@+id/a_a3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/a_q3"
                 android:layout_below="@+id/a_q3"
@@ -131,7 +139,7 @@
 
             <TextView
                 android:id="@+id/a_q4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/a_a3"
                 android:layout_below="@+id/a_a3"
@@ -143,7 +151,7 @@
 
             <EditText
                 android:id="@+id/a_a4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/a_a3"
                 android:layout_below="@+id/a_q4"
@@ -154,7 +162,7 @@
 
             <TextView
                 android:id="@+id/a_q5"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/a_a3"
                 android:layout_below="@+id/a_a4"
@@ -166,7 +174,7 @@
 
             <EditText
                 android:id="@+id/a_a5"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/a_a3"
                 android:layout_below="@+id/a_q5"
@@ -177,7 +185,7 @@
 
             <TextView
                 android:id="@+id/a_q6"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/a_a5"
                 android:layout_below="@+id/a_a5"
@@ -189,7 +197,7 @@
 
             <EditText
                 android:id="@+id/a_a6"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/a_a5"
                 android:layout_below="@+id/a_q6"
