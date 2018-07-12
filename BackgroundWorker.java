@@ -40,7 +40,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
 
         String type = params[0];
         String login_url = "http://192.168.43.129/mytest/login.php";
-        String submit_url = "http://192.168.43.129/mytest/Awareness.php";
+        String awareness_url = "http://192.168.43.129/mytest/Awareness.php";
 
         if (type.equals("login")) {
             String UID = params[1];
@@ -96,7 +96,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
 
             try {
 
-                URL url = new URL(submit_url);
+                URL url = new URL(awareness_url);
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
@@ -335,6 +335,123 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
 
 
         }
+
+        else if(type.equals("deaddiction facilitation"))
+        {
+            String Victims_Approached = params[1];
+            String Revisit_Needed = params[2];
+            String Linked_To_Centres = params[3];
+            String Centre_Contacted =  params[4];
+            String Centre_Issues = params[5];
+            String Drop_Outs = params[6];
+            String Dropout_Reason = params[7];
+            String Successfully_Treated =  params[8];
+            String Behavioural_Changes = params[9];
+            String Problems = params[10];
+            String Suggestions = params[11];
+
+            try {
+
+                URL url = new URL(submit_url);
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.setRequestMethod("POST");
+                httpURLConnection.setDoOutput(true);
+                OutputStream outputStream = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
+
+                String data_string = URLEncoder.encode("Number of Victims Approached (Monthly)", "UTF-8") + "=" + URLEncoder.encode(Victims_Approached, "UTF-8") + "&"
+                        + URLEncoder.encode("Number of Victims Needed to be Revisited for Convincing", "UTF-8") + "=" + URLEncoder.encode(Revisit_Needed, "UTF-8") + "&"
+                        + URLEncoder.encode("Number of Victims Linked to an OAAT/De-Addiction Centre", "UTF-8") + "=" + URLEncoder.encode(Linked_To_Centres, "UTF-8") + "&"
+                        + URLEncoder.encode("Price of Drugs", "UTF-8") + "=" + URLEncoder.encode(Centre_Contacted , "UTF-8") + "&"
+                        + URLEncoder.encode("Reason for Drug Abuse", "UTF-8") + "=" + URLEncoder.encode(Centre_Issues, "UTF-8") + "&"
+                        + URLEncoder.encode("Drug Abuse Prone Area", "UTF-8") + "=" + URLEncoder.encode(Drop_Outs, "UTF-8") + "&"
+                        + URLEncoder.encode("Gathering Area for Abusers", "UTF-8") + "=" + URLEncoder.encode(Dropout_Reason, "UTF-8") + "&"
+                        + URLEncoder.encode("Time of Supply", "UTF-8") + "=" + URLEncoder.encode(Successfully_Treated, "UTF-8")+ "&"
+                        + URLEncoder.encode("Time of Consumption", "UTF-8") + "=" + URLEncoder.encode(Behavioural_Changes , "UTF-8")+ "&"
+                        + URLEncoder.encode("Place of Purchase", "UTF-8") + "=" + URLEncoder.encode(Problems, "UTF-8")+ "&"
+                        + URLEncoder.encode("Suggestions", "UTF-8") + "=" + URLEncoder.encode(Suggestions, "UTF-8");
+
+
+                bufferedWriter.write(data_string);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                outputStream.close();
+
+                InputStream inputStream = httpURLConnection.getInputStream();
+                BufferedReader bufferedReader =new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
+                String result="";
+                String line="";
+                while((line=bufferedReader.readLine())!=null){
+                    result +=line;
+                }
+
+
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+
+                return result;
+
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+
+        }
+
+        else if(type.equals("vg identification"))
+        {
+            String VulnerableGroups_Identified = params[1];
+            String VulnerableGroups_Counseled = params[2];
+            String Problems = params[3];
+            String Suggestions =  params[4];
+
+            try {
+
+                URL url = new URL(submit_url);
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.setRequestMethod("POST");
+                httpURLConnection.setDoOutput(true);
+                OutputStream outputStream = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
+
+                String data_string = URLEncoder.encode("Number of Vulnerable Groups Identified", "UTF-8") + "=" + URLEncoder.encode(VulnerableGroups_Identified, "UTF-8") + "&"
+                        + URLEncoder.encode("Number of Vulnerable Groups Counseled", "UTF-8") + "=" + URLEncoder.encode(VulnerableGroups_Counseled, "UTF-8") + "&"
+                        + URLEncoder.encode("Problems", "UTF-8") + "=" + URLEncoder.encode(Problems, "UTF-8") + "&"
+                        + URLEncoder.encode("Suggestions", "UTF-8") + "=" + URLEncoder.encode(Suggestions, "UTF-8");
+
+
+                bufferedWriter.write(data_string);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                outputStream.close();
+
+                InputStream inputStream = httpURLConnection.getInputStream();
+                BufferedReader bufferedReader =new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
+                String result="";
+                String line="";
+                while((line=bufferedReader.readLine())!=null){
+                    result +=line;
+                }
+
+
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+
+                return result;
+
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+
+        }
+
 
         return null;
 
