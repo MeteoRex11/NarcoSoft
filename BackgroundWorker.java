@@ -139,6 +139,81 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
 
         }
 
+        else if(type.equals("positive activity"))
+        {
+            String Positive_Activity_Status = params[1];
+            String Positive_Activity = params[2];
+            String Activity_Venue = params[3];
+            String Activity_Time = params[4];
+            String Activity_Duration = params[5];
+            String Potential_Participants_Number = params[6];
+            String Actual_Participants_Number = params[7];
+            String Participants = params[8];
+            String Official_Availability = params[9];
+            String Official_Identity = params[10];
+            String Problem_Status = params[11];
+            String Problems = params[12];
+            String Existing_Infrastructure = params[13];
+            String Infrastructure_Changes = params[14];
+            String Infrastructure_Problems = params[15];
+            String Suggestions = params[16];
+
+
+            try {
+
+                URL url = new URL(submit_url);
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.setRequestMethod("POST");
+                httpURLConnection.setDoOutput(true);
+                OutputStream outputStream = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
+
+                String data_string = URLEncoder.encode("Positive Activity Completion", "UTF-8") + "=" + URLEncoder.encode(Positive_Activity_Status, "UTF-8") + "&"
+                        + URLEncoder.encode("Positive Activity", "UTF-8") + "=" + URLEncoder.encode(Positive_Activity, "UTF-8") + "&"
+                        + URLEncoder.encode("Activity Venue", "UTF-8") + "=" + URLEncoder.encode(Activity_Venue, "UTF-8") + "&"
+                        + URLEncoder.encode("Activity Time", "UTF-8") + "=" + URLEncoder.encode(Activity_Time, "UTF-8") + "&"
+                        + URLEncoder.encode("Activity Duration", "UTF-8") + "=" + URLEncoder.encode(Activity_Duration, "UTF-8") + "&"
+                        + URLEncoder.encode("Number of People Invited", "UTF-8") + "=" + URLEncoder.encode(Potential_Participants_Number, "UTF-8") + "&"
+                        + URLEncoder.encode("Number of Participants", "UTF-8") + "=" + URLEncoder.encode(Actual_Participants_Number, "UTF-8") + "&"
+                        + URLEncoder.encode("Participants", "UTF-8") + "=" + URLEncoder.encode(Participants, "UTF-8")+ "&"
+                        + URLEncoder.encode("Official's Availability", "UTF-8") + "=" + URLEncoder.encode(Official_Availability, "UTF-8")+ "&"
+                        + URLEncoder.encode("Official's Identity", "UTF-8") + "=" + URLEncoder.encode(Official_Identity, "UTF-8")+ "&"
+                        + URLEncoder.encode("Problem Existence", "UTF-8") + "=" + URLEncoder.encode(Problem_Status, "UTF-8")+ "&"
+                        + URLEncoder.encode("Problem", "UTF-8") + "=" + URLEncoder.encode(Problems, "UTF-8")+ "&"
+                        + URLEncoder.encode("Existing Infrastructure", "UTF-8") + "=" + URLEncoder.encode(Existing_Infrastructure, "UTF-8")+ "&"
+                        + URLEncoder.encode("Changes made in Infrastructure", "UTF-8") + "=" + URLEncoder.encode(Infrastructure_Changes, "UTF-8") + "&"
+                        + URLEncoder.encode("Problems faced regarding Infrastructure", "UTF-8") + "=" + URLEncoder.encode(Infrastructure_Problems, "UTF-8")  + "&"
+                        + URLEncoder.encode("Suggestions", "UTF-8") + "=" + URLEncoder.encode(Suggestions, "UTF-8");
+
+                bufferedWriter.write(data_string);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                outputStream.close();
+
+                InputStream inputStream = httpURLConnection.getInputStream();
+                BufferedReader bufferedReader =new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
+                String result="";
+                String line="";
+                while((line=bufferedReader.readLine())!=null){
+                    result +=line;
+                }
+
+
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+
+                return result;
+
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+
+        }
+
         return null;
 
 
