@@ -10,11 +10,10 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-
 public class Awareness_Activity extends AppCompatActivity {
 
-    EditText no_of_peopleet,feedbacket,probet,suggestionet;
-    RadioGroup radioGroup1,radioGroup2;
+   EditText a_a3, a_a4, a_a5, a_a6;
+   String radioText, radioText2;
     RadioButton radioButton01,radioButton02;
 
     @Override
@@ -22,13 +21,23 @@ public class Awareness_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_awareness_);
 
-        no_of_peopleet=findViewById(R.id.a_a3);
-        feedbacket=findViewById(R.id.a_a4);
-        probet=findViewById(R.id.a_a5);
-        suggestionet=findViewById(R.id.a_a6);
-        radioGroup1=findViewById(R.id.RGrp1);
-        radioGroup2=findViewById(R.id.RGrp2);
+        RadioGroup a_RB1 = (RadioGroup) findViewById(R.id.a_RB1);
+        int rbt1 = a_RB1.getCheckedRadioButtonId();
+        radioButton01 = findViewById(rbt1);
+        radioText = radioButton01.getText().toString();
 
+       RadioGroup RGrp = (RadioGroup) findViewById(R.id.RGrp);
+       int rbt2 = RGrp.getCheckedRadioButtonId();
+        radioButton02 = findViewById(rbt2);
+        radioText2 = radioButton02.getText().toString();
+
+
+
+
+        a_a3 = findViewById(R.id.a_a3);
+        a_a4 = findViewById(R.id.a_a4);
+        a_a5 = findViewById(R.id.a_a5);
+        a_a6 = findViewById(R.id.a_a6);
 
     }
 
@@ -37,26 +46,25 @@ public class Awareness_Activity extends AppCompatActivity {
         builder.setMessage("Are you sure you want to submit?")
                 .setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+
                     public void onClick(DialogInterface dialog, int id) {
-                        int select_attemptID=radioGroup1.getCheckedRadioButtonId();
-                        int select_activityID=radioGroup2.getCheckedRadioButtonId();
-                        radioButton01=findViewById(select_attemptID);
-                        radioButton02=findViewById(select_activityID);
-                        String str_attempt_status=radioButton01.getText().toString();
-                        String str_no_of_people=no_of_peopleet.getText().toString();
 
-                        String str_probs=probet.getText().toString();
-                        String str_activity=radioButton02.getText().toString();
-                        String str_feedback=feedbacket.getText().toString();
-                        String str_suggestion=suggestionet.getText().toString();
+                        Intent i=new  Intent(Awareness_Activity.this,Submit_screen.class);
+                        startActivityForResult(i,4);
+                        finish();
 
-                        String type="submit";
-                        BackgroundWorker backgroundWorker=new BackgroundWorker(Awareness_Activity.this);
-                        backgroundWorker.execute(type,str_attempt_status,str_activity,str_no_of_people,str_feedback,str_probs,str_suggestion);
-
-
+                         String Awareness_Activity_Status = radioText;
+                         String Awareness_Activity = radioText2;
+                         String Activity_Audience = a_a3.getText().toString();
+                         String Audience_Feedback = a_a4.getText().toString();
+                         String Problems= a_a5.getText().toString();
+                         String Suggestions = a_a6.getText().toString();
+                         String type="awareness";
+                         BackgroundWorker backgroundWorker = new BackgroundWorker(Awareness_Activity.this);
+                         backgroundWorker.execute(type, Awareness_Activity_Status, Awareness_Activity, Activity_Audience, Audience_Feedback, Problems, Suggestions);
                     }
                 })
+
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         dialog.cancel();
