@@ -14,7 +14,7 @@ feedback, probs, suggestions) values ('$attempt_status', '$activity', '$no_of_pe
 
 
 if($awareinit->query($mysql_qry) === TRUE){
-	echo "Submition sucessfull";
+	echo "Submission Sucessful";
 	
 }
 else{
