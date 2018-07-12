@@ -19,11 +19,11 @@
 
             <TextView
                 android:id="@+id/d_m_q1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="45dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="100dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
                 android:text="@string/d_m_q1"
@@ -31,7 +31,7 @@
 
             <EditText
                 android:id="@+id/d_m_a1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_m_q1"
                 android:layout_below="@+id/d_m_q1"
@@ -43,7 +43,7 @@
 
             <TextView
                 android:id="@+id/d_m_q2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_m_a1"
                 android:layout_below="@+id/d_m_a1"
@@ -55,23 +55,25 @@
 
             <RadioGroup
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/ApproachMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_m_q2"
-                android:layout_below="@+id/d_m_q2">
+                android:layout_below="@+id/d_m_q2"
+                android:orientation="horizontal">
 
                 <RadioButton
                     android:id="@+id/radioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:padding="10dp"
                     android:text="Directly" />
 
                 <RadioButton
                     android:id="@+id/radioButton2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:padding="10dp"
                     android:text="Through their families" />
 
             </RadioGroup>
@@ -79,7 +81,7 @@
 
             <TextView
                 android:id="@+id/d_m_q3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_m_q2"
                 android:layout_below="@+id/ApproachMethod"
@@ -91,7 +93,7 @@
 
             <EditText
                 android:id="@+id/d_m_a3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_m_q3"
                 android:layout_below="@+id/d_m_q3"
@@ -114,7 +116,7 @@
 
             <EditText
                 android:id="@+id/d_m_a4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_m_q4"
                 android:layout_below="@+id/d_m_q4"
@@ -137,7 +139,7 @@
 
             <EditText
                 android:id="@+id/d_m_a5"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/d_m_a4"
                 android:layout_below="@+id/d_m_q5"
@@ -148,7 +150,7 @@
 
             <TextView
                 android:id="@+id/d_m_q6"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_m_a5"
                 android:layout_below="@+id/d_m_a5"
@@ -160,7 +162,7 @@
 
             <EditText
                 android:id="@+id/d_m_a6"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/d_m_a5"
                 android:layout_below="@+id/d_m_q6"
@@ -171,7 +173,7 @@
 
             <TextView
                 android:id="@+id/d_m_q7"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_m_a6"
                 android:layout_below="@+id/d_m_a6"
@@ -183,9 +185,9 @@
 
             <EditText
                 android:id="@+id/d_m_a7"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/d_m_a6"
+                android:layout_alignParentStart="true"
                 android:layout_below="@+id/d_m_q7"
                 android:ems="10"
                 android:inputType="textPersonName"
@@ -194,7 +196,7 @@
 
             <TextView
                 android:id="@+id/d_m_q8"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_m_q7"
                 android:layout_below="@+id/d_m_a7"
@@ -206,7 +208,7 @@
 
             <EditText
                 android:id="@+id/d_m_a8"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/d_m_a7"
                 android:layout_below="@+id/d_m_q8"
