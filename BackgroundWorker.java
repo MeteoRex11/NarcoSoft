@@ -41,6 +41,12 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
         String type = params[0];
         String login_url = "http://192.168.43.129/mytest/login.php";
         String awareness_url = "http://192.168.43.129/mytest/Awareness.php";
+        String positive_activity_url = "http://192.168.43.129/mytest/Awareness.php";
+        String deaddiction_identification_url = "http://192.168.43.129/mytest/Awareness.php";
+        String deaddiction_motivation_url = "http://192.168.43.129/mytest/Awareness.php";
+        String deaddiction_facilitation_url = "http://192.168.43.129/mytest/Awareness.php";
+        String vg_identification_url = "http://192.168.43.129/mytest/Awareness.php";
+        String vg_protection_url = "http://192.168.43.129/mytest/Awareness.php";
 
         if (type.equals("login")) {
             String UID = params[1];
@@ -161,7 +167,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
 
             try {
 
-                URL url = new URL(submit_url);
+                URL url = new URL(positive_activity_url);
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
@@ -230,7 +236,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
 
             try {
 
-                URL url = new URL(submit_url);
+                URL url = new URL(deaddiction_identification_url);
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
@@ -291,7 +297,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
 
             try {
 
-                URL url = new URL(submit_url);
+                URL url = new URL(deaddiction_motivation_url);
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
@@ -352,7 +358,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
 
             try {
 
-                URL url = new URL(submit_url);
+                URL url = new URL(deaddiction_facilitation_url);
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
@@ -410,7 +416,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
 
             try {
 
-                URL url = new URL(submit_url);
+                URL url = new URL(vg_identification_url);
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
@@ -422,6 +428,64 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
                         + URLEncoder.encode("Problems", "UTF-8") + "=" + URLEncoder.encode(Problems, "UTF-8") + "&"
                         + URLEncoder.encode("Suggestions", "UTF-8") + "=" + URLEncoder.encode(Suggestions, "UTF-8");
 
+
+                bufferedWriter.write(data_string);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                outputStream.close();
+
+                InputStream inputStream = httpURLConnection.getInputStream();
+                BufferedReader bufferedReader =new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
+                String result="";
+                String line="";
+                while((line=bufferedReader.readLine())!=null){
+                    result +=line;
+                }
+
+
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+
+                return result;
+
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+
+        }
+
+        else if(type.equals("vg protection"))
+        {
+            String Efforts_For_Protection = params[1];
+            String Activities_Promoted = params[2];
+            String Vulnerable_Individuals_Linked_To_Positive_Activity = params[3];
+            String Expert_Counselling_Advised =  params[4];
+            String Counselling_Problems = params[5];
+            String VG_Acceptance_Problems = params[6];
+            String Other_VG_Problems = params[7];
+            String Suggestions =  params[8];
+
+            try {
+
+                URL url = new URL(vg_protection_url);
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.setRequestMethod("POST");
+                httpURLConnection.setDoOutput(true);
+                OutputStream outputStream = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
+
+                String data_string = URLEncoder.encode("Efforts Made for Protection of Vulnerable Groups", "UTF-8") + "=" + URLEncoder.encode(Efforts_For_Protection, "UTF-8") + "&"
+                        + URLEncoder.encode("Activities Promoted for Protection of Vulnerable Groups", "UTF-8") + "=" + URLEncoder.encode(Activities_Promoted, "UTF-8") + "&"
+                        + URLEncoder.encode("Vulnerable Individuals Linked to a Positive Activity", "UTF-8") + "=" + URLEncoder.encode(Vulnerable_Individuals_Linked_To_Positive_Activity, "UTF-8") + "&"
+                        + URLEncoder.encode("Individuals Recommended for Specific Expert Counselling", "UTF-8") + "=" + URLEncoder.encode(Expert_Counselling_Advised, "UTF-8") + "&"
+                        + URLEncoder.encode("Problems Regarding Counselling Arrangement", "UTF-8") + "=" + URLEncoder.encode(Counselling_Problems, "UTF-8") + "&"
+                        + URLEncoder.encode("Problems Regarding Acceptance of a Need of Protection", "UTF-8") + "=" + URLEncoder.encode(VG_Acceptance_Problems, "UTF-8") + "&"
+                        + URLEncoder.encode("Other Problems", "UTF-8") + "=" + URLEncoder.encode( Other_VG_Problems, "UTF-8")+ "&"
+                        + URLEncoder.encode("Suggestions", "UTF-8") + "=" + URLEncoder.encode(Suggestions, "UTF-8");
 
                 bufferedWriter.write(data_string);
                 bufferedWriter.flush();
