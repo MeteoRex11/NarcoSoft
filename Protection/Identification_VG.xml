@@ -19,11 +19,11 @@
 
             <TextView
                 android:id="@+id/p_i_q1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="45dp"
-                android:layout_marginTop="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="103dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
                 android:text="@string/p_i_q1"
@@ -31,7 +31,7 @@
 
             <EditText
                 android:id="@+id/p_i_a1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/p_i_q1"
                 android:layout_below="@+id/p_i_q1"
@@ -43,7 +43,7 @@
 
             <TextView
                 android:id="@+id/p_i_q2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/p_i_a1"
                 android:layout_below="@+id/p_i_a1"
@@ -55,7 +55,7 @@
 
             <EditText
                 android:id="@+id/p_i_a2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/p_i_q2"
                 android:layout_below="@+id/p_i_q2"
@@ -79,7 +79,7 @@
 
             <EditText
                 android:id="@+id/p_i_a3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/p_i_q3"
                 android:layout_below="@+id/p_i_q3"
@@ -89,10 +89,9 @@
                 android:textIsSelectable="true" />
 
 
-
             <TextView
                 android:id="@+id/p_i_q4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/p_i_a3"
                 android:layout_below="@+id/p_i_a3"
@@ -104,7 +103,7 @@
 
             <EditText
                 android:id="@+id/p_i_a4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/p_i_a3"
                 android:layout_below="@+id/p_i_q4"
