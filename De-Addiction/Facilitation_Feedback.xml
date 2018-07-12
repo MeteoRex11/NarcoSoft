@@ -19,11 +19,11 @@
 
             <TextView
                 android:id="@+id/d_f_q1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="45dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="100dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
                 android:text="@string/d_f_q1"
@@ -31,7 +31,7 @@
 
             <EditText
                 android:id="@+id/d_f_a1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_f_q1"
                 android:layout_below="@+id/d_f_q1"
@@ -55,7 +55,7 @@
 
             <EditText
                 android:id="@+id/d_f_a2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_f_q2"
                 android:layout_below="@+id/d_f_q2"
@@ -79,7 +79,7 @@
 
             <EditText
                 android:id="@+id/d_f_a3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_f_q3"
                 android:layout_below="@+id/d_f_q3"
@@ -90,7 +90,7 @@
 
             <TextView
                 android:id="@+id/d_f_q4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_f_a3"
                 android:layout_below="@+id/d_f_a3"
@@ -102,7 +102,7 @@
 
             <EditText
                 android:id="@+id/d_f_a4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_f_q4"
                 android:layout_below="@+id/d_f_q4"
@@ -125,7 +125,7 @@
 
             <EditText
                 android:id="@+id/d_f_a5"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/d_f_a4"
                 android:layout_below="@+id/d_f_q5"
@@ -137,7 +137,7 @@
 
             <TextView
                 android:id="@+id/d_f_q6"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_f_a5"
                 android:layout_below="@+id/d_f_a5"
@@ -149,7 +149,7 @@
 
             <EditText
                 android:id="@+id/d_f_a6"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/d_f_a5"
                 android:layout_below="@+id/d_f_q6"
@@ -160,7 +160,7 @@
 
             <TextView
                 android:id="@+id/d_f_q7"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_f_a6"
                 android:layout_below="@+id/d_f_a6"
@@ -172,7 +172,7 @@
 
             <EditText
                 android:id="@+id/d_f_a7"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_f_q7"
                 android:layout_below="@+id/d_f_q7"
@@ -183,7 +183,7 @@
 
             <TextView
                 android:id="@+id/d_f_q8"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_f_a7"
                 android:layout_below="@+id/d_f_a7"
@@ -195,7 +195,7 @@
 
             <EditText
                 android:id="@+id/d_f_a8"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/d_f_a7"
                 android:layout_below="@+id/d_f_q8"
@@ -206,7 +206,7 @@
 
             <TextView
                 android:id="@+id/d_f_q9"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_f_a8"
                 android:layout_below="@+id/d_f_a8"
@@ -218,7 +218,7 @@
 
             <EditText
                 android:id="@+id/d_f_a9"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/d_f_a8"
                 android:layout_below="@+id/d_f_q9"
@@ -229,7 +229,7 @@
 
             <TextView
                 android:id="@+id/d_f_q10"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_f_a9"
                 android:layout_below="@+id/d_f_a9"
@@ -241,7 +241,7 @@
 
             <EditText
                 android:id="@+id/d_f_a10"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/d_f_a9"
                 android:layout_below="@+id/d_f_q10"
@@ -252,7 +252,7 @@
 
             <TextView
                 android:id="@+id/d_f_q11"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/d_f_a10"
                 android:layout_below="@+id/d_f_a10"
@@ -264,7 +264,7 @@
 
             <EditText
                 android:id="@+id/d_f_a11"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/d_f_a10"
                 android:layout_below="@+id/d_f_q11"
