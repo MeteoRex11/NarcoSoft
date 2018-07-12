@@ -19,11 +19,11 @@
 
             <TextView
                 android:id="@+id/p_p_q1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="45dp"
-                android:layout_marginTop="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="100dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
                 android:text="@string/p_p_q1"
@@ -31,7 +31,7 @@
 
             <EditText
                 android:id="@+id/p_p_a1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/p_p_q1"
                 android:layout_below="@+id/p_p_q1"
@@ -43,7 +43,7 @@
 
             <TextView
                 android:id="@+id/p_p_q2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/p_p_a1"
                 android:layout_below="@+id/p_p_a1"
@@ -54,8 +54,8 @@
                 android:textColor="@android:color/background_light" />
 
             <EditText
-                android:id="@+id/p_p_a2"
-                android:layout_width="wrap_content"
+                android:id="@+id/p_p_q2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/p_p_q2"
                 android:layout_below="@+id/p_p_q2"
@@ -69,8 +69,8 @@
                 android:id="@+id/p_p_q3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/p_p_a2"
-                android:layout_below="@+id/p_p_a2"
+                android:layout_alignStart="@+id/p_p_q2"
+                android:layout_below="@+id/p_p_q2"
                 android:layout_marginTop="25dp"
                 android:background="@color/colorAccent"
                 android:padding="7dp"
@@ -79,7 +79,7 @@
 
             <EditText
                 android:id="@+id/p_p_a3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/p_p_q3"
                 android:layout_below="@+id/p_p_q3"
@@ -90,7 +90,7 @@
 
             <TextView
                 android:id="@+id/p_p_q4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/p_p_a3"
                 android:layout_below="@+id/p_p_a3"
@@ -102,7 +102,7 @@
 
             <EditText
                 android:id="@+id/p_p_a4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/p_p_q4"
                 android:layout_below="@+id/p_p_q4"
@@ -113,7 +113,7 @@
 
             <TextView
                 android:id="@+id/p_p_q5"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/p_p_a4"
                 android:layout_below="@+id/p_p_a4"
@@ -125,9 +125,9 @@
 
             <EditText
                 android:id="@+id/p_p_a5"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/p_i_a4"
+                android:layout_alignEnd="@+id/p_p_a4"
                 android:layout_below="@+id/p_p_q5"
                 android:ems="10"
                 android:inputType="text"
@@ -149,7 +149,7 @@
 
             <EditText
                 android:id="@+id/p_p_a6"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/p_p_a5"
                 android:layout_below="@+id/p_p_q6"
@@ -172,7 +172,7 @@
 
             <EditText
                 android:id="@+id/p_p_a7"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/p_p_q7"
                 android:layout_below="@+id/p_p_q7"
@@ -183,7 +183,7 @@
 
             <TextView
                 android:id="@+id/p_p_q8"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/p_p_a7"
                 android:layout_below="@+id/p_p_a7"
@@ -195,7 +195,7 @@
 
             <EditText
                 android:id="@+id/p_p_a8"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/p_p_a7"
                 android:layout_below="@+id/p_p_q8"
