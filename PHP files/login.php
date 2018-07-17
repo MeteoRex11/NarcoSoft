@@ -1,5 +1,5 @@
 <?php
-require "Bridge.php";
+require "loginConnect.php";
 $UID=$_POST["UID"];
 $date=$_POST["date"];
 $mysql_qry = "select * from login_screen where UID_number like '$UID' and birth_date like '$date';";
