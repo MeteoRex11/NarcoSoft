@@ -12,7 +12,7 @@ Suggestions) values ('$Number_of_Vulnerable_Groups_Identified', '$Number_of_Vuln
 
 
 if($Bridge->query($mysql_qry) === TRUE){
-	echo "Submition sucessfull";
+	echo "Submission sucessfull";
 	
 }
 else{
