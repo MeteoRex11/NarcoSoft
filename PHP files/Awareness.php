@@ -14,7 +14,7 @@ Audience_Feedback, Problems_Faced, Suggestions) values ('$Awareness_Activity_Per
 
 
 if($Bridge->query($mysql_qry) === TRUE){
-	echo "Submition sucessfull";
+	echo "Submission sucessfull";
 	
 }
 else{
