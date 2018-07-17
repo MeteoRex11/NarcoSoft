@@ -1,5 +1,5 @@
 <?php
-require "awareinit.php";
+require "Bridge.php";
 $Number_of_Vulnerable_Groups_Identified=$_POST["Number_of_Vulnerable_Groups_Identified"];
 $Number_of_Vulnerable_Groups_Counseled=$_POST["Number_of_Vulnerable_Groups_Counseled"];
 $Problems=$_POST["Problems"];
@@ -11,14 +11,14 @@ Suggestions) values ('$Number_of_Vulnerable_Groups_Identified', '$Number_of_Vuln
 '$Suggestions')";
 
 
-if($awareinit->query($mysql_qry) === TRUE){
+if($Bridge->query($mysql_qry) === TRUE){
 	echo "Submition sucessfull";
 	
 }
 else{
-	echo "Error: " . $mysql_qry . "<br>" . $awareinit->error;
+	echo "Error: " . $mysql_qry . "<br>" . $Bridge->error;
 }
 
-$awareinit->close();
+$Bridge->close();
 
 ?>
