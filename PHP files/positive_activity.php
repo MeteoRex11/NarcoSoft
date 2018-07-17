@@ -1,5 +1,5 @@
 <?php
-require "awareinit.php";
+require "Bridge.php";
 
 $Positive_Positive_Activity_Performed_Completion=$_POST["Positive_Positive_Activity_Performed_Completion"];
 $Positive_Activity_Performed=$_POST["Positive_Activity_Performed"];
@@ -24,13 +24,13 @@ Actual_Number_of_Participants,Participants,Availability_of_an_Identity_of_the_Of
 values ('$Positive_Positive_Activity_Performed_Completion', '$Positive_Activity_Performed', '$Activity_Venue','$Time_at_Which_Activity_Was_Performed', '$Activity_Duration', '$Number_of_People_Invited_to_Participate','$Actual_Number_of_Participants','$Participants','$Availability_of_an_Identity_of_the_Official','$Identity_of_the_Official','$Existence_of_Problem','$Problem','$Existing_Infrastructure','$Problems_Faced_Regarding_Infrastructure','$Changes_Made_in_Infrastructure','$Suggestionss')";
 
 
-if($awareinit->query($mysql_qry) === TRUE){
-	echo "Submition sucessfull";
+if($Bridge->query($mysql_qry) === TRUE){
+	echo "Submission sucessfull";
 	
 }
 else{
-	echo "Error: " . $mysql_qry . "<br>" . $awareinit->error;
+	echo "Error: " . $mysql_qry . "<br>" . $Bridge->error;
 }
 
-$awareinit->close();
+$Bridge->close();
 ?>
