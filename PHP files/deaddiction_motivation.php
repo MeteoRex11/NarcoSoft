@@ -1,5 +1,5 @@
 <?php
-require "awareinit.php";
+require "Bridge.php";
 
 $Place_of_Approach=$_POST["Place_of_Approach"];
 $Method_of_Approach=$_POST["Method_of_Approach"];
@@ -17,13 +17,13 @@ values ('$Place_of_Approach', '$Method_of_Approach', '$Problems_Regarding_Victim
 '$Attitude_of_Victims','$Suggestionss')";
 
 
-if($awareinit->query($mysql_qry) === TRUE){
-	echo "Submition sucessfull";
+if($Bridge->query($mysql_qry) === TRUE){
+	echo "Submission sucessfull";
 	
 }
 else{
-	echo "Error: " . $mysql_qry . "<br>" . $awareinit->error;
+	echo "Error: " . $mysql_qry . "<br>" . $Bridge->error;
 }
 
-$awareinit->close();
+$Bridge->close();
 ?>
