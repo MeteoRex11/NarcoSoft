@@ -53,9 +53,9 @@
 
 
 
-    <string name="p_i_q1">How many vulnerable groups have you identified this month?</string>
-    <string name="p_i_q2">How many of these vulnerable groups have you counseled?</string>
-    <string name="p_i_q3">Did you face any other problems regarding identification of vulnerable groups?</string>
+    <string name="p_i_q1">How many vulnerable individuals/groups have you identified this month?</string>
+    <string name="p_i_q2">How many of these vulnerable individuals/groups have you counseled?</string>
+    <string name="p_i_q3">Did you face any other problems regarding identification of vulnerable individuals/groups?</string>
 
     <string name="p_p_q1">What efforts did you make for the protection of the identified vulnerable groups?</string>
     <string name="p_p_q2">What activities did you promote for their protection?</string>
