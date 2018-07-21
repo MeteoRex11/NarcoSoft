@@ -7,7 +7,7 @@
     <string name="uid_number">UID Number</string>
     <string name="log_in">Log In</string>
     <string name="sign_up">Sign Up</string>
-    <string name="dob">DOB</string>
+    <string name="mobno">Mobile Number</string>
 
     <string name="identification">Identification</string>
     <string name="motivation">Motivation</string>
@@ -16,21 +16,22 @@
     <string name="d_m_q1">How many drug abuse victims have you approached this month?</string>
     <string name="d_m_q2">How did you approach them?</string>
     <string name="d_m_q3">What problems were faced by you regarding the victims?</string>
-    <string name="d_m_q4">What problems were faced by you regarding the families of the victims?</string>
-    <string name="d_m_q5">What were the main arguments given by the victim/their family?</string>
+    <string name="d_m_q4">What problems were faced by you regarding the friends / families of the victims?</string>
+    <string name="d_m_q5">What were the main arguments given by the victim / his or her family?</string>
     <string name="d_m_q6">How did you convince them regarding the social stigma?</string>
     <string name="d_m_q7">What was the attitude of the victim?</string>
+    <string name="d_m_q8">How many victims have to be visited again to be convinced, to get treated?</string>
 
-    
-    <string name="d_f_q2">How many victims have to be visited again to be convinced, to get treated?</string>
-    <string name="d_f_q3">How many of them have been linked to an OOAT centre or any other De-addiction Centre?</string>
-    <string name="d_f_q4">Which centre was contacted?</string>
-    <string name="d_f_q5">What issues were faced regarding the OOAT Centres/ De-addiction Centres?</string>
-    <string name="d_f_q6">How many people dropped out from the treatment?</string>
-    <string name="d_f_q7">What was the reason for them dropping out?</string>
-    <string name="d_f_q8">How many people successfully completed their treatment?</string>
-    <string name="d_f_q9">What behavioural change have you observed in them?</string>
-    <string name="d_f_q10">Did you face any other problem ?</string>
+
+
+    <string name="d_f_q1">How many of the victims approached, have been linked to an OOAT centre or any other De-addiction Centre?</string>
+    <string name="d_f_q2">Which centre was contacted?</string>
+    <string name="d_f_q3">What issues were faced regarding the OOAT Centres/ De-addiction Centres?</string>
+    <string name="d_f_q4">How many people dropped out from the treatment?</string>
+    <string name="d_f_q5">What was the reason for them dropping out?</string>
+    <string name="d_f_q6">How many people are continuing their treatment?</string>
+    <string name="d_f_q7">What behavioural change have you observed in them?</string>
+    <string name="d_f_q80">Did you face any other problem ?</string>
 
     <string name="d_i_q1">How many people are known to use narcotics in the Mohalla?</string>
     <string name="d_i_q2">Name and Details of these users</string>
