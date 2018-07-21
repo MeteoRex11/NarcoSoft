@@ -12,7 +12,7 @@ import android.content.SharedPreferences;
 
 public class Facilitation_Feedback extends AppCompatActivity {
 
-    EditText d_f_a1, d_f_a2, d_f_a3, d_f_a4, d_f_a5, d_f_a6, d_f_a7;
+    EditText d_f_a1, d_f_a2, d_f_a3, d_f_a4, d_f_a5, d_f_a6, d_f_a7, d_f_a8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,7 @@ public class Facilitation_Feedback extends AppCompatActivity {
         d_f_a5 = findViewById(R.id.d_f_a5);
         d_f_a6 = findViewById(R.id.d_f_a6);
         d_f_a7 = findViewById(R.id.d_f_a7);
+        d_f_a8 = findViewById(R.id.d_f_a8);
     }
 
     public void Proceed(View view){
@@ -45,7 +46,8 @@ public class Facilitation_Feedback extends AppCompatActivity {
                         String Drop_Outs = d_f_a4.getText().toString();
                         String Dropout_Reason = d_f_a5.getText().toString();
                         String Successfully_Treated =  d_f_a6.getText().toString();
-                        String Suggestions = d_f_a7.getText().toString();
+                        String Problems =  d_f_a7.getText().toString();
+                        String Suggestions = d_f_a8.getText().toString();
 
                         String type="deaddiction facilitation";
                         BackgroundWorker backgroundWorker = new BackgroundWorker(Facilitation_Feedback.this);
@@ -53,8 +55,8 @@ public class Facilitation_Feedback extends AppCompatActivity {
                         SharedPreferences sharedPreferences= PreferenceManager.getDefaultSharedPreferences(Facilitation_Feedback.this);
                         String ID =sharedPreferences.getString("ID","unknown");
 
-                        backgroundWorker.execute(type, Victims_Linked_To_Centres, Centre_Contacted, Centre_Issues, Drop_Outs,Dropout_Reason, 
-                                Successfully_Treated, Suggestions, ID);
+                        backgroundWorker.execute(type, Victims_Linked_To_Centres, Centre_Contacted, Centre_Issues, Drop_Outs,Dropout_Reason,
+                                Successfully_Treated, Problems, Suggestions, ID);
 
 
 
