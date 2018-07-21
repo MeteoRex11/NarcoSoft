@@ -58,8 +58,7 @@
     <string name="p_i_q3">Did you face any other problems regarding identification of vulnerable individuals/groups?</string>
 
     <string name="p_p_q1">What efforts did you make for the protection of the identified vulnerable groups?</string>
-    <string name="p_p_q2">What activities did you promote for their protection?</string>
-    <string name="p_p_q3">How many of the vulnerable individuals have been have been linked to a positive activity?</string>
+    <string name="p_p_q3">How many of the vulnerable individuals have been have been talked to about the ill effects of drugs?</string>
     <string name="p_p_q4">How many of them have been advised for specific expert counseling?</string>
     <string name="p_p_q5">What problems were faced while organising expert counseling for the vulnerable individuals?</string>
     <string name="p_p_q6">What problems were faced from individual/family perspective, regarding the acceptance of a need for protection?</string>
@@ -99,8 +98,8 @@
     <string name="pa_q10">If yes, who was this official?</string>
     <string name="pa_q11">Were there any problems which hindered the facilitation of this activity?</string>
     <string name="pa_q12">If yes, what were these problems?</string>
-    <string name="pa_q13">Was there any existing infrastructure available to carry out the activity?</string>
-    <string name="pa_q14">What problems did you face regarding the infrastructure?</string>
+    <string name="pa_q13">Was there any existing infrastructure available to carry out the sport?</string>
+    <string name="pa_q14">What problems did you face regarding the sports infrastructure?</string>
     <string name="pa_q15">What efforts did you make to create an additional infrastructure for the same?</string>
     <string name="PButton">Proceed</string>
     <string name="yb2">Yes</string>
