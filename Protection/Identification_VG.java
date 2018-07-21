@@ -7,20 +7,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.preference.PreferenceManager;
+import android.content.SharedPreferences;
 
 public class Vulnerable_Group_Identification extends AppCompatActivity {
-    
+
     EditText p_i_a1, p_i_a2, p_i_a3, p_i_a4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vulnerable__group__identification);
-        
-        p_i_a1 = findViewById(R.id.p_i_a1);
-        p_i_a2 = findViewById(R.id.p_i_a2);
-        p_i_a3 = findViewById(R.id.p_i_a3);
-        p_i_a4 = findViewById(R.id.p_i_a4);
+
+        p_i_a1 = findViewById(R.id.d_f_a1);
+        p_i_a2 = findViewById(R.id.d_f_a2);
+        p_i_a3 = findViewById(R.id.d_f_a3);
+        p_i_a4 = findViewById(R.id.d_f_a4);
     }
 
     public void Proceed(View view){
@@ -33,15 +35,21 @@ public class Vulnerable_Group_Identification extends AppCompatActivity {
                         startActivityForResult(i,2);
                         finish();
 
-                        String VulnerableGroups_Identified = p_i_a1.getText().toString();
-                        String VulnerableGroups_Counseled =p_i_a2.getText().toString();
+                        String Vulnerables_Identified = p_i_a1.getText().toString();
+                        String Vulnerables_Counseled = p_i_a2.getText().toString();
                         String Problems = p_i_a3.getText().toString();
                         String Suggestions =  p_i_a4.getText().toString();
-                        
+
 
                         String type="vg identification";
                         BackgroundWorker backgroundWorker = new BackgroundWorker(Vulnerable_Group_Identification.this);
-                        backgroundWorker.execute(type, VulnerableGroups_Identified, VulnerableGroups_Counseled, Problems, Suggestions );
+
+                        SharedPreferences sharedPreferences= PreferenceManager.getDefaultSharedPreferences(Vulnerable_Group_Identification.this);
+                        String ID =sharedPreferences.getString("ID","unknown");
+
+                        backgroundWorker.execute(type, Vulnerables_Identified, Vulnerables_Counseled, Problems, Suggestions, ID );
+
+
                     }
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
