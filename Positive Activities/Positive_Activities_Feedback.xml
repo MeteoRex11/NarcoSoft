@@ -234,6 +234,7 @@
                 android:layout_alignStart="@+id/pa_q4"
                 android:layout_below="@+id/pa_q8"
                 android:ems="10"
+                android:hint="Ex: Youth, Farmers, Labourers, Ladies "
                 android:inputType="textPersonName"
                 android:textColorLink="@android:color/holo_blue_light"
                 android:textIsSelectable="true" />
