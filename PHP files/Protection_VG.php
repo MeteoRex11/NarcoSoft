@@ -3,9 +3,9 @@ require "Bridge.php";
 
 $Efforts_Made_for_Protection_of_Vulnerable_Group=$_POST["Effort_for_VG"];
 $Activities_Promoted_for_Protection_of_Vulnerable_Groups=$_POST["Actvty_for_VG"];
-$Vulnerable_Individuals_Linked_to_a_Positive_Activity=$_POST["Vulnrabls_for_actvty"];
+$Vulnerable_Individuals_Linked_to_a_Positive_Activity=$_POST["Vulnrabls_for_acts"];
 $Individuals_Recommended_for_Specific_Expert_Counselling=$_POST["VG_recommended"];
-$Problems_Regarding_Acceptance_of_a_Need_of_Protection=$_POST["prob_accept_protection"];
+$Problems_Regarding_Acceptance_of_a_Need_of_Protection=$_POST["prob_accept_protect"];
 $Problems_Regarding_Counselling_Arrangement=$_POST["counslling_arangment"];
 $Other_Problems=$_POST["probs"];
 $Suggestion=$_POST["suggest"];
