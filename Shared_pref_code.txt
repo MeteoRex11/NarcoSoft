@@ -1,0 +1,55 @@
+---<<< SignUP_Activity >>>---
+
+Spinner role=findViewByID(R.id.role);
+
+String Role_Selected= role.getSelectedItem().toString();
+
+
+SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("ROLE", Role_Selected);
+        editor.apply();
+
+
+
+---<<< Splash_Activity >>>---
+
+   //in OnCreate class before login activity check(line 15 approx)
+
+SharedPreferences sharedPreferences= PreferenceManager.getDefaultSharedPreferences(Awareness_Activity.this);
+                        String Role_retrieved= sharedPreferences.getString("ROLE","unknown");
+					
+
+if(Role_retrieved.equals("STF"){		//You can use switch case as well
+	//launch STF
+	finish();
+	return;
+}
+ 
+else if(Role_retrieved.equals("DMT"){
+	//launch DMT
+	return;
+}
+ 
+else if(Role_retrieved.equals("SDMT"){
+	//launch SDMT
+	finish();
+	return;
+}
+ 
+else if(Role_retrieved.equals("CC"){
+	//launch CC
+	finish();
+	return;
+}
+ 
+else if(Role_retrieved.equals("NRNC"){
+	//launch NRNC
+	finish();
+	return;
+}
+
+
+
+
+ 
