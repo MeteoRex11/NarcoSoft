@@ -1,0 +1,38 @@
+    <string name="district">Choose Your District</string>
+    <string name="village">Choose Your Village</string>
+    <string name="mohalla">Choose Your Mohalla</string>
+    
+    
+
+    <string name="sl_a1_prompt">Choose Location</string>
+    <string-array name="sl_a1">
+
+        <item>- Choose Activity -</item>
+        <item> Sports</item>
+        <item> Cultural</item>
+        <item> Social Service</item>
+        <item> Any other</item>
+
+    </string-array>
+
+    <string name="sl_a2_prompt">Choose Location</string>
+    <string-array name="sl_a2">
+
+        <item>- Choose Activity -</item>
+        <item> Sports</item>
+        <item> Cultural</item>
+        <item> Social Service</item>
+        <item> Any other</item>
+
+    </string-array>
+
+    <string name="sl_a3_prompt">Choose Location</string>
+    <string-array name="sl_a3">
+
+        <item>- Choose Activity -</item>
+        <item> Sports</item>
+        <item> Cultural</item>
+        <item> Social Service</item>
+        <item> Any other</item>
+
+    </string-array>

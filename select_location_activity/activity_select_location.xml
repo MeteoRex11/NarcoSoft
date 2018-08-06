@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".select_location">
+
+
+    <TextView
+        android:id="@+id/sl_q1"
+        android:layout_width="370sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="6sp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_corner"
+        android:padding="9dp"
+        android:paddingStart="20dp"
+        android:text="@string/district"
+        android:textColor="#fff" />
+
+    <Spinner
+        android:id="@+id/sl_a1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sl_q1"
+        android:layout_alignEnd="@+id/sl_q1"
+        android:layout_below="@+id/sl_q1"
+        android:textColor="#000"
+        android:entries="@array/sl_a1"
+        android:background="@color/drop_down_grey"
+        android:padding="15dp"
+        android:prompt="@string/sl_a1_prompt"
+        android:textColorLink="@android:color/holo_blue_light"
+        />
+
+    <TextView
+        android:id="@+id/sl_q2"
+        android:layout_width="370sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sl_a1"
+        android:layout_marginStart="6sp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_corner"
+        android:padding="9dp"
+        android:paddingStart="20dp"
+        android:text="@string/village"
+        android:textColor="#fff" />
+
+    <Spinner
+        android:id="@+id/sl_a2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sl_q1"
+        android:layout_alignEnd="@+id/sl_q1"
+        android:layout_below="@+id/sl_q2"
+        android:textColor="#000"
+        android:entries="@array/sl_a2"
+        android:background="@color/drop_down_grey"
+        android:padding="15dp"
+        android:prompt="@string/sl_a2_prompt"
+        android:textColorLink="@android:color/holo_blue_light"
+        />
+
+    <TextView
+        android:id="@+id/sl_q3"
+        android:layout_width="370sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="6sp"
+        android:layout_below="@id/sl_a2"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_corner"
+        android:padding="9dp"
+        android:paddingStart="20dp"
+        android:text="@string/mohalla"
+        android:textColor="#fff" />
+
+    <Spinner
+        android:id="@+id/sl_a3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sl_q1"
+        android:layout_alignEnd="@+id/sl_q1"
+        android:layout_below="@+id/sl_q3"
+        android:textColor="#000"
+        android:entries="@array/sl_a3"
+        android:background="@color/drop_down_grey"
+        android:padding="15dp"
+        android:prompt="@string/sl_a3_prompt"
+        android:textColorLink="@android:color/holo_blue_light"
+        />
+
+
+
+    <Button
+        android:id="@+id/AwarenessProceedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sl_a3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_corner"
+        android:onClick="Proceed"
+        android:padding="10dp"
+        android:paddingEnd="50dp"
+        android:paddingStart="50dp"
+        android:text="@string/PButton"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>
