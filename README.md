@@ -2,9 +2,16 @@ ReadMe !!
 ReadMe onii-san !!
 
 
-NIGGA that's so fucking kawaiii !!!
+Jai Pallu !!!
 
 
-LMAO :)
+LMAO ;)
 
--_-
+Omae wa mou.....
+.
+.
+.
+.
+SHINDEIRU!!!!!!
+
+
